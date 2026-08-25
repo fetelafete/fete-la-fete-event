@@ -166,7 +166,88 @@ footer{padding:34px 0;color:#988d82;border-top:1px solid var(--line);font-size:.
 <details><summary>Comment demander un devis ?</summary><p>Appelez le <a href="tel:+33611813395">06 11 81 33 95</a> ou écrivez à <a href="mailto:fetelafete.djsim@gmail.com">fetelafete.djsim@gmail.com</a> en indiquant la date, le lieu, le type d'événement et le nombre d'invités.</p></details>
 </div></section>
 
-<section id="contact" class="contact"><div class="wrap"><div class="contact-box"><div class="kicker">Votre événement</div><h2>On imagine votre soirée ?</h2><p class="lead">Parlez-nous de votre date, de votre lieu et de l'ambiance souhaitée. Nous préparons ensemble une prestation à votre image.</p><div class="actions"><a class="btn gold" href="tel:+33611813395">06 11 81 33 95</a><a class="btn outline" href="https://mail.google.com/mail/?view=cm&fs=1&to=fetelafete.djsim@gmail.com&su=Demande%20de%20devis%20F%C3%AAte%20La%20F%C3%AAte%20Event">Envoyer un e-mail</a></div><div class="contact-info"><a href="mailto:fetelafete.djsim@gmail.com">fetelafete.djsim@gmail.com</a><span>Isère · Auvergne-Rhône-Alpes</span></div></div></div></section>
+<section id="contact" class="contact">
+<div class="wrap">
+<div class="contact-box">
+
+<div class="kicker">Votre événement</div>
+<h2>Demandez votre devis</h2>
+
+<p class="lead">
+Parlez-nous de votre événement. Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.
+</p>
+
+<form action="https://formspree.io/f/xoeagnag" method="POST" class="quote-form">
+
+<div class="form-grid">
+
+<div>
+<label for="name">Nom et prénom *</label>
+<input type="text" id="name" name="Nom et prénom" required>
+</div>
+
+<div>
+<label for="email">E-mail *</label>
+<input type="email" id="email" name="E-mail" required>
+</div>
+
+<div>
+<label for="phone">Téléphone</label>
+<input type="tel" id="phone" name="Téléphone">
+</div>
+
+<div>
+<label for="date">Date de l'événement *</label>
+<input type="date" id="date" name="Date de l'événement" required>
+</div>
+
+<div>
+<label for="location">Lieu de l'événement *</label>
+<input type="text" id="location" name="Lieu de l'événement" required>
+</div>
+
+<div>
+<label for="event">Type d'événement *</label>
+<select id="event" name="Type d'événement" required>
+<option value="">Choisissez...</option>
+<option>Mariage</option>
+<option>Anniversaire</option>
+<option>Soirée privée</option>
+<option>Événement professionnel</option>
+<option>Bal</option>
+<option>Borne à selfie</option>
+<option>Autre</option>
+</select>
+</div>
+
+<div>
+<label for="guests">Nombre d'invités</label>
+<input type="number" id="guests" name="Nombre d'invités" min="1">
+</div>
+
+<div class="form-full">
+<label for="message">Votre message *</label>
+<textarea id="message" name="Message" rows="6" required placeholder="Parlez-nous de votre événement, de vos envies et de l'ambiance souhaitée..."></textarea>
+</div>
+
+</div>
+
+<button type="submit" class="btn gold form-submit">
+Envoyer ma demande de devis
+</button>
+
+<p class="form-note">Les informations transmises servent uniquement à répondre à votre demande.</p>
+
+</form>
+
+<div class="contact-info">
+<a href="tel:+33611813395">06 11 81 33 95</a>
+<span>Isère · Auvergne-Rhône-Alpes</span>
+</div>
+
+</div>
+</div>
+</section>
 </main>
 <footer><div class="wrap"><strong>Fête La Fête Event</strong> — DJ événementiel à Saint-Hilaire-de-la-Côte, Isère · Mariages, anniversaires, bals, soirées privées et événements professionnels.</div></footer>
 
