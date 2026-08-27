@@ -5,14 +5,15 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Fête La Fête Event | DJ mariage & événementiel en Isère</title>
+<title>DJ mariage et événementiel en Isère | Fête La Fête Event</title>
 
 <meta
   name="description"
-  content="Fête La Fête Event, DJ mariage et événementiel en Isère. Animation musicale, sonorisation, éclairage et borne à selfie pour mariages, anniversaires et événements professionnels."
+  content="DJ mariage et événementiel en Isère : animation musicale, sonorisation, éclairage et borne à selfie. Fête La Fête Event intervient à Bourgoin-Jallieu, Grenoble, Voiron, Vienne et en Auvergne-Rhône-Alpes."
 >
 
 <meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Fête La Fête Event">
 
 <link
   rel="canonical"
@@ -83,66 +84,98 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://fetelafete.github.io/fete-la-fete-event/#business",
-  "name": "Fête La Fête Event",
-  "url": "https://fetelafete.github.io/fete-la-fete-event/",
-  "telephone": "+33611813395",
-  "email": "fetelafete.djsim@gmail.com",
-  "description": "DJ mariage et événementiel en Isère et Auvergne-Rhône-Alpes. Animation musicale, sonorisation, éclairage et borne à selfie pour mariages, anniversaires et événements professionnels.",
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "AdministrativeArea",
-      "name": "Isère"
+      "@type": "ProfessionalService",
+      "@id": "https://fetelafete.github.io/fete-la-fete-event/#business",
+      "name": "Fête La Fête Event",
+      "url": "https://fetelafete.github.io/fete-la-fete-event/",
+      "telephone": "+33611813395",
+      "email": "fetelafete.djsim@gmail.com",
+      "description": "DJ mariage et événementiel en Isère et en Auvergne-Rhône-Alpes. Animation musicale, sonorisation, éclairage et borne à selfie pour mariages, anniversaires et événements professionnels.",
+      "priceRange": "€€",
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Isère"},
+        {"@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes"},
+        {"@type": "City", "name": "Saint-Hilaire-de-la-Côte"},
+        {"@type": "City", "name": "Bourgoin-Jallieu"},
+        {"@type": "City", "name": "Grenoble"},
+        {"@type": "City", "name": "Voiron"},
+        {"@type": "City", "name": "Vienne"},
+        {"@type": "City", "name": "Lyon"},
+        {"@type": "City", "name": "Chambéry"},
+        {"@type": "City", "name": "Annecy"},
+        {"@type": "City", "name": "Valence"},
+        {"@type": "City", "name": "Saint-Étienne"}
+      ],
+      "serviceType": [
+        "DJ mariage",
+        "DJ anniversaire",
+        "DJ événementiel",
+        "Sonorisation événementielle",
+        "Éclairage événementiel",
+        "Borne à selfie"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+33611813395",
+        "contactType": "customer service",
+        "availableLanguage": ["fr"]
+      }
     },
     {
-      "@type": "AdministrativeArea",
-      "name": "Auvergne-Rhône-Alpes"
+      "@type": "WebSite",
+      "@id": "https://fetelafete.github.io/fete-la-fete-event/#website",
+      "url": "https://fetelafete.github.io/fete-la-fete-event/",
+      "name": "Fête La Fête Event",
+      "inLanguage": "fr-FR"
     },
     {
-      "@type": "City",
-      "name": "Bourgoin-Jallieu"
-    },
-    {
-      "@type": "City",
-      "name": "Grenoble"
-    },
-    {
-      "@type": "City",
-      "name": "Voiron"
-    },
-    {
-      "@type": "City",
-      "name": "Vienne"
-    },
-    {
-      "@type": "City",
-      "name": "Lyon"
-    },
-    {
-      "@type": "City",
-      "name": "Chambéry"
-    },
-    {
-      "@type": "City",
-      "name": "Annecy"
-    },
-    {
-      "@type": "City",
-      "name": "Valence"
-    },
-    {
-      "@type": "City",
-      "name": "Saint-Étienne"
+      "@type": "FAQPage",
+      "@id": "https://fetelafete.github.io/fete-la-fete-event/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quels événements animez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fête La Fête Event propose des prestations DJ pour les mariages, anniversaires, bals, soirées privées et événements professionnels, avec sonorisation et éclairage adaptés."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proposez-vous un DJ pour un mariage en Isère ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Les prestations sont proposées en Isère et dans toute l'Auvergne-Rhône-Alpes, notamment autour de Grenoble, Bourgoin-Jallieu, Voiron et Vienne."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dans quelles villes vous déplacez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Notamment Saint-Hilaire-de-la-Côte, Bourgoin-Jallieu, Voiron, Grenoble, Vienne, Lyon, Chambéry, Annecy, Valence et Saint-Étienne."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La borne à selfie est-elle disponible avec impression ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Une borne à selfie avec tirage photo 10 × 15 cm est proposée en option, à partir de 300 € TTC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment demander un devis ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Appelez le 06 11 81 33 95 ou écrivez à fetelafete.djsim@gmail.com en indiquant la date, le lieu, le type d'événement et le nombre d'invités."
+          }
+        }
+      ]
     }
-  ],
-  "serviceType": [
-    "DJ mariage",
-    "DJ anniversaire",
-    "DJ événementiel",
-    "Sonorisation événementielle",
-    "Éclairage événementiel",
-    "Borne à selfie"
   ]
 }
 </script>
@@ -227,6 +260,18 @@ url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fi
 footer{padding:34px 0;color:#988d82;border-top:1px solid var(--line);font-size:.78rem}footer strong{color:#ddd5ca}
 @media(max-width:900px){.menu a:not(.cta){display:none}.cards,.split{grid-template-columns:1fr}.visual{min-height:430px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:230px 230px 230px}.g1{grid-column:1/3;grid-row:auto}}
 @media(max-width:560px){.wrap{padding:0 18px}nav{height:70px}.logo{font-size:1.45rem}.hero-content{padding-top:125px}h1{font-size:3.7rem}.hero-note{gap:10px}.hero-note span{border:0;padding:0 12px 0 0}.gallery{grid-template-columns:1fr;grid-template-rows:auto}.g,.g1{grid-column:auto;min-height:250px}.visual{min-height:360px}section{padding:78px 0}.contact-box{padding:50px 0}}
+
+/* Formulaire */
+.quote-form{margin-top:34px;max-width:900px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-full{grid-column:1/-1}
+.quote-form label{display:block;margin-bottom:7px;color:#f3eee8;font-size:.85rem;font-weight:600}
+.quote-form input,.quote-form select,.quote-form textarea{width:100%;padding:14px 15px;border:1px solid rgba(255,255,255,.25);border-radius:12px;background:rgba(0,0,0,.28);color:#fff;font:inherit}
+.quote-form textarea{resize:vertical}
+.form-submit{margin-top:20px;border:0;cursor:pointer}
+.form-note{font-size:.78rem;color:#bdb3a8;margin-top:14px}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -256,7 +301,7 @@ footer{padding:34px 0;color:#988d82;border-top:1px solid var(--line);font-size:.
 </div></div></section>
 
 <section id="mariage" class="cream"><div class="wrap"><div class="split">
-<div class="visual wedding"><span>Le jour où tout doit être parfait.</span></div>
+<div class="visual wedding" role="img" aria-label="Ambiance de mariage élégante avec animation DJ"><span>Le jour où tout doit être parfait.</span></div>
 <div class="copy"><div class="kicker">Mariage</div><h2>Votre histoire, votre musique, votre ambiance.</h2><p class="intro">De l'accueil à l'ouverture de bal puis à la piste de danse, chaque moment est pensé avec vous. L'objectif : une soirée fluide, élégante et surtout à votre image.</p>
 <ul class="list"><li>DJ et animation musicale personnalisée</li><li>Sonorisation adaptée à votre salle</li><li>Éclairage de piste et ambiance</li><li>Préparation en amont de votre réception</li></ul>
 
@@ -264,19 +309,19 @@ footer{padding:34px 0;color:#988d82;border-top:1px solid var(--line);font-size:.
 
 <section class="dark"><div class="wrap"><div class="split">
 <div class="copy"><div class="kicker">Anniversaire · soirée</div><h2>Une piste de danse qui ne demande qu'à s'allumer.</h2><p class="intro">Votre public, vos goûts, votre énergie. La programmation évolue au fil de la soirée pour créer une ambiance naturelle et faire danser toutes les générations.</p><ul class="list"><li>Playlist préparée selon vos envies</li><li>Ambiance évolutive toute la soirée</li><li>Son et lumière adaptés au lieu</li><li>Prestation personnalisée</li></ul></div>
-<div class="visual party"><span>Danser. Rire. Profiter.</span></div>
+<div class="visual party" role="img" aria-label="Ambiance de soirée et piste de danse avec DJ"><span>Danser. Rire. Profiter.</span></div>
 </div></div></section>
 
 <section id="galerie" class="dark"><div class="wrap"><div class="section-head"><div class="kicker">L'ambiance</div><h2>Le chic se ressent aussi dans la lumière.</h2><p class="intro">Une sélection d'ambiances visuelles pour illustrer l'esprit Fête La Fête Event.</p></div>
-<div class="gallery"><div class="g g1"></div><div class="g g2"></div><div class="g g3"></div><div class="g g4"></div><div class="g g5"></div></div>
+<div class="gallery"><div class="g g1" role="img" aria-label="Ambiance de concert et éclairage événementiel"></div><div class="g g2" role="img" aria-label="Ambiance musicale pour événement"></div><div class="g g3" role="img" aria-label="Éclairage de scène et ambiance festive"></div><div class="g g4" role="img" aria-label="Animation de soirée"></div><div class="g g5" role="img" aria-label="Ambiance événementielle et piste de danse"></div></div>
 </div></section>
 
 <section class="quote"><div class="wrap"><blockquote>« La bonne musique ne remplit pas seulement la piste. Elle crée le souvenir. »</blockquote><cite>Fête La Fête Event</cite></div></section>
 
 <section id="photobooth" class="cream"><div class="wrap"><div class="split">
-<div class="visual booth"><span>Des souvenirs à emporter.</span></div>
+<div class="visual booth" role="img" aria-label="Animation borne à selfie pour événement"><span>Des souvenirs à emporter.</span></div>
 <div class="copy"><div class="kicker">Animation · Photobooth</div><h2>La borne à selfie avec tirage photo.</h2><p class="intro">Ajoutez une animation conviviale à votre mariage, anniversaire ou événement. Vos invités prennent leurs photos et repartent avec un souvenir imprimé.</p><ul class="list"><li>Photos pendant toute la soirée</li><li>Tirage instantané au format 10 × 15 cm</li><li>Animation pour petits et grands</li><li>Idéale pour mariage et anniversaire</li></ul><strong style="font-size:1.15rem;color:#8e6d34">À partir de 300 € TTC</strong>
-</div></div></section><div class="actions">
+</div></div></section>
 
 <section id="zones" class="dark"><div class="wrap"><div class="section-head"><div class="kicker">Déplacements</div><h2>Votre événement, où qu'il soit en région.</h2><p class="intro">Fête La Fête Event se déplace directement sur votre lieu de réception en Isère et en Auvergne-Rhône-Alpes.</p></div>
 <div class="pills"><span class="pill">Saint-Hilaire-de-la-Côte</span><span class="pill">Bourgoin-Jallieu</span><span class="pill">Voiron</span><span class="pill">Grenoble</span><span class="pill">Vienne</span><span class="pill">Lyon</span><span class="pill">Chambéry</span><span class="pill">Annecy</span><span class="pill">Valence</span><span class="pill">Saint-Étienne</span><span class="pill">Isère</span><span class="pill">Auvergne-Rhône-Alpes</span></div>
