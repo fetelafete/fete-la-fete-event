@@ -1,1 +1,4 @@
-https://fetelafete-event.fr/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://fetelafete-event.fr/sitemap.xml
