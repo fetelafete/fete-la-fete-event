@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://fetelafete.github.io/fete-la-fete-event/sitemap.xml
+https://fetelafete-event.fr/sitemap.xml
