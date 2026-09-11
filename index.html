@@ -24,7 +24,6 @@
   --gold:#d9a441;
   --gold2:#f5d27a;
   --black:#050505;
-  --dark:#0c0c0e;
   --text:#f5f2eb;
   --muted:#bcb8ae;
   --line:rgba(217,164,65,.35);
@@ -294,14 +293,69 @@ section{
   background:#050505;
 }
 
-#packs .cards{
+.pack-grid{
+  display:grid;
   grid-template-columns:repeat(2,1fr);
-  max-width:900px;
+  gap:22px;
+  max-width:950px;
   margin:35px auto 0;
 }
 
-#packs .card{
-  min-height:100%;
+.pack-card{
+  background:
+    linear-gradient(
+      145deg,
+      #111113,
+      #090909
+    );
+
+  border:1px solid var(--line);
+  border-radius:18px;
+
+  padding:35px 30px;
+
+  transition:.3s;
+}
+
+.pack-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--gold);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.45);
+}
+
+.pack-icon{
+  width:65px;
+  height:65px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid var(--gold);
+  border-radius:50%;
+
+  color:var(--gold2);
+  font-size:28px;
+
+  margin-bottom:22px;
+}
+
+.pack-card h3{
+  margin:0 0 15px;
+
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:30px;
+  font-weight:400;
+
+  color:var(--gold2);
+}
+
+.pack-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:15px;
 }
 
 
@@ -494,8 +548,8 @@ footer strong{
     grid-template-columns:repeat(2,1fr);
   }
 
-  #packs .cards{
-    grid-template-columns:repeat(2,1fr);
+  .pack-grid{
+    grid-template-columns:1fr;
   }
 
   .contact-grid{
@@ -572,8 +626,16 @@ footer strong{
     grid-template-columns:1fr;
   }
 
-  #packs .cards{
+  .pack-grid{
     grid-template-columns:1fr;
+  }
+
+  .pack-card{
+    padding:28px 22px;
+  }
+
+  .pack-card h3{
+    font-size:27px;
   }
 
   .zones{
@@ -670,6 +732,10 @@ footer strong{
 
       <a href="#prestations">
         Prestations
+      </a>
+
+      <a href="#packs">
+        Packs
       </a>
 
       <a href="#zones">
@@ -855,14 +921,14 @@ footer strong{
     </div>
 
 
-    <div class="cards">
+    <div class="pack-grid">
 
 
       <!-- PACK DJ -->
 
-      <article class="card">
+      <article class="pack-card">
 
-        <div class="icon">
+        <div class="pack-icon">
           🎧
         </div>
 
@@ -882,9 +948,9 @@ footer strong{
 
       <!-- PACK DJ + PHOTOGRAPHE -->
 
-      <article class="card">
+      <article class="pack-card">
 
-        <div class="icon">
+        <div class="pack-icon">
           📸
         </div>
 
