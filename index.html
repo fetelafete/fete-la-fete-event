@@ -131,6 +131,7 @@ nav a:hover{
   justify-content:center;
   text-align:center;
   padding:70px 20px;
+
   background:
     radial-gradient(
       circle at center,
@@ -153,6 +154,7 @@ nav a:hover{
   width:min(380px,80vw);
   height:auto;
   margin:0 auto 35px;
+
   filter:drop-shadow(
     0 0 28px rgba(217,164,65,.20)
   );
@@ -169,6 +171,7 @@ nav a:hover{
 
 .hero h1{
   margin:0 0 20px;
+
   font-family:Georgia,"Times New Roman",serif;
   font-size:clamp(38px,6vw,66px);
   line-height:1.1;
@@ -198,6 +201,7 @@ section{
 
 .section-title h2{
   margin:8px 0 14px;
+
   font-family:Georgia,"Times New Roman",serif;
   font-size:clamp(30px,4vw,45px);
   line-height:1.15;
@@ -233,15 +237,19 @@ section{
       #111113,
       #090909
     );
+
   border:1px solid var(--line);
   border-radius:16px;
   padding:30px 24px;
+
   transition:.3s;
 }
 
 .card:hover{
   transform:translateY(-5px);
+
   border-color:var(--gold);
+
   box-shadow:
     0 15px 40px rgba(0,0,0,.45);
 }
@@ -249,18 +257,23 @@ section{
 .icon{
   width:55px;
   height:55px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   border:1px solid var(--gold);
   border-radius:50%;
+
   color:var(--gold2);
   font-size:23px;
+
   margin-bottom:18px;
 }
 
 .card h3{
   margin:0 0 9px;
+
   font-family:Georgia,"Times New Roman",serif;
   font-size:24px;
   font-weight:400;
@@ -270,6 +283,25 @@ section{
   margin:0;
   color:var(--muted);
   font-size:14px;
+}
+
+
+/* =========================
+   PACKS
+========================= */
+
+#packs{
+  background:#050505;
+}
+
+#packs .cards{
+  grid-template-columns:repeat(2,1fr);
+  max-width:900px;
+  margin:35px auto 0;
+}
+
+#packs .card{
+  min-height:100%;
 }
 
 
@@ -290,9 +322,12 @@ section{
 
 .zone{
   padding:15px 18px;
+
   border:1px solid rgba(217,164,65,.22);
   border-radius:10px;
+
   background:#0b0b0b;
+
   color:#ddd;
 }
 
@@ -321,16 +356,20 @@ section{
 .contact-box,
 .form-box{
   background:#0c0c0e;
+
   border:1px solid var(--line);
   border-radius:18px;
+
   padding:30px;
 }
 
 .contact-box h3{
   margin-top:0;
+
   font-family:Georgia,"Times New Roman",serif;
   font-size:29px;
   font-weight:400;
+
   color:var(--gold2);
 }
 
@@ -365,11 +404,15 @@ input,
 textarea,
 select{
   width:100%;
+
   padding:14px 15px;
+
   background:#050505;
   color:#fff;
+
   border:1px solid rgba(255,255,255,.18);
   border-radius:9px;
+
   font:inherit;
   outline:none;
 }
@@ -387,16 +430,23 @@ textarea{
 
 button{
   cursor:pointer;
+
   padding:14px 20px;
+
   border:0;
   border-radius:30px;
-  background:linear-gradient(
-    135deg,
-    #f5d27a,
-    #c58b2c
-  );
+
+  background:
+    linear-gradient(
+      135deg,
+      #f5d27a,
+      #c58b2c
+    );
+
   color:#080808;
+
   font-weight:800;
+
   transition:.25s;
 }
 
@@ -411,16 +461,21 @@ button:hover{
 
 footer{
   padding:40px 0;
+
   color:#999;
+
   border-top:1px solid var(--line);
+
   font-size:13px;
   text-align:center;
+
   background:#030303;
 }
 
 .footer-logo{
   width:90px;
   height:auto;
+
   margin:0 auto 15px;
 }
 
@@ -436,6 +491,10 @@ footer strong{
 @media(max-width:900px){
 
   .cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  #packs .cards{
     grid-template-columns:repeat(2,1fr);
   }
 
@@ -459,6 +518,7 @@ footer strong{
   .nav{
     min-height:auto;
     padding:10px 0;
+
     flex-direction:column;
     gap:8px;
   }
@@ -470,7 +530,9 @@ footer strong{
 
   nav{
     width:100%;
+
     justify-content:center;
+
     gap:8px;
   }
 
@@ -507,6 +569,10 @@ footer strong{
   }
 
   .cards{
+    grid-template-columns:1fr;
+  }
+
+  #packs .cards{
     grid-template-columns:1fr;
   }
 
@@ -753,6 +819,83 @@ footer strong{
         <p>
           Une prestation photo pensée pour conserver
           les moments forts de votre événement.
+        </p>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PACKS -->
+
+<section id="packs">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="eyebrow">
+        Nos formules
+      </div>
+
+      <h2>
+        Découvrez nos packs
+      </h2>
+
+      <p class="intro">
+        Des formules pensées pour vous proposer une prestation
+        complète et adaptée à votre événement.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <!-- PACK DJ -->
+
+      <article class="card">
+
+        <div class="icon">
+          🎧
+        </div>
+
+        <h3>
+          Pack DJ
+        </h3>
+
+        <p>
+          DJ professionnel, animation musicale, sonorisation,
+          éclairage de la piste de danse, sonorisation du vin d'honneur
+          et/ou de la cérémonie, vidéo projecteur avec écran et micro HF
+          à votre disposition.
+        </p>
+
+      </article>
+
+
+      <!-- PACK DJ + PHOTOGRAPHE -->
+
+      <article class="card">
+
+        <div class="icon">
+          📸
+        </div>
+
+        <h3>
+          Pack DJ + Photographe
+        </h3>
+
+        <p>
+          Une prestation complète réunissant DJ professionnel,
+          animation musicale, sonorisation, éclairage et photographie
+          pour immortaliser les moments forts de votre événement.
         </p>
 
       </article>
