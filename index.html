@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="fr">
 <head>
@@ -19,7 +20,6 @@
 <meta property="og:type" content="website">
 
 <style>
-
 :root{
   --gold:#d9a441;
   --gold2:#f5d27a;
@@ -30,13 +30,9 @@
   --line:rgba(217,164,65,.35);
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   margin:0;
@@ -60,8 +56,6 @@ img{
   width:min(1180px,92%);
   margin:auto;
 }
-
-/* HEADER */
 
 header{
   position:sticky;
@@ -111,10 +105,8 @@ nav a:hover{
   color:var(--gold2);
 }
 
-/* HERO */
-
 .hero{
-  padding:24px 0 0;
+  padding:24px 0 42px;
 }
 
 .hero img{
@@ -124,42 +116,6 @@ nav a:hover{
   border-radius:18px;
   box-shadow:0 20px 70px rgba(0,0,0,.65);
 }
-
-.hero-actions{
-  display:flex;
-  justify-content:center;
-  gap:14px;
-  flex-wrap:wrap;
-  margin:22px 0 42px;
-}
-
-/* BOUTONS */
-
-.btn{
-  display:inline-block;
-  padding:13px 23px;
-  border-radius:30px;
-  border:1px solid var(--gold);
-  font-weight:700;
-  transition:.25s;
-}
-
-.btn:hover{
-  background:var(--gold);
-  color:#080808;
-}
-
-.btn.gold{
-  background:linear-gradient(135deg,#f5d27a,#c58b2c);
-  color:#090909;
-  border:0;
-}
-
-.btn.gold:hover{
-  opacity:.9;
-}
-
-/* SECTIONS */
 
 section{
   padding:70px 0;
@@ -174,9 +130,7 @@ section{
   font-weight:700;
 }
 
-h1,
-h2,
-h3{
+h1,h2,h3{
   margin-top:0;
 }
 
@@ -197,8 +151,6 @@ h2{
   color:var(--muted);
   font-size:17px;
 }
-
-/* CARTES */
 
 .cards{
   display:grid;
@@ -231,8 +183,6 @@ h2{
   font-size:14px;
 }
 
-/* LIENS PAGES SEO */
-
 .page-link{
   display:inline-block;
   margin-top:20px;
@@ -249,8 +199,6 @@ h2{
   background:var(--gold);
   color:#050505;
 }
-
-/* PRESENTATION */
 
 .presentation{
   display:grid;
@@ -270,8 +218,6 @@ h2{
   color:var(--muted);
 }
 
-/* BORNE */
-
 .booth{
   margin-top:28px;
   background:linear-gradient(145deg,#121214,#070707);
@@ -285,8 +231,6 @@ h2{
   margin-bottom:0;
 }
 
-/* ZONES */
-
 .zones{
   columns:3;
   column-gap:40px;
@@ -298,8 +242,6 @@ h2{
   break-inside:avoid;
   padding:5px 0;
 }
-
-/* CONTACT */
 
 .contact-grid{
   display:grid;
@@ -357,8 +299,6 @@ button{
   font-weight:800;
 }
 
-/* FOOTER */
-
 footer{
   padding:35px 0;
   color:#999;
@@ -369,8 +309,6 @@ footer{
 footer strong{
   color:var(--gold2);
 }
-
-/* TABLETTE */
 
 @media(max-width:850px){
 
@@ -386,10 +324,7 @@ footer strong{
   nav{
     gap:10px;
   }
-
 }
-
-/* MOBILE */
 
 @media(max-width:560px){
 
@@ -416,14 +351,11 @@ footer strong{
     columns:2;
   }
 
-  .btn,
   .page-link{
     width:100%;
     text-align:center;
   }
-
 }
-
 </style>
 
 <script type="application/ld+json">
@@ -457,13 +389,11 @@ footer strong{
   ]
 }
 </script>
-
 </head>
 
 <body>
 
 <header>
-
   <div class="container nav">
 
     <a class="logo" href="#accueil">
@@ -480,12 +410,9 @@ footer strong{
     </nav>
 
   </div>
-
 </header>
 
 <main id="accueil">
-
-  <!-- HERO -->
 
   <div class="container hero">
 
@@ -495,34 +422,15 @@ footer strong{
       loading="eager"
     >
 
-    <div class="hero-actions">
-
-      <a class="btn" href="#prestations">
-        Découvrir nos prestations
-      </a>
-
-      <a class="btn gold" href="#devis">
-        Demander un devis
-      </a>
-
-    </div>
-
   </div>
-
-
-  <!-- PRESTATIONS -->
 
   <section id="prestations">
 
     <div class="container">
 
-      <div class="eyebrow">
-        Nos prestations
-      </div>
+      <div class="eyebrow">Nos prestations</div>
 
-      <h1>
-        DJ mariage et photographe mariage en Isère
-      </h1>
+      <h1>DJ mariage et photographe mariage en Isère</h1>
 
       <p class="intro">
         Fête La Fête Event vous accompagne pour vos mariages,
@@ -537,25 +445,20 @@ footer strong{
 
           <div class="icon">🎧</div>
 
-          <h3>
-            DJ mariage
-          </h3>
+          <h3>DJ mariage</h3>
 
           <p>
-            Animation musicale et programmation adaptées
-            à vos goûts, votre public et au rythme de votre soirée.
+            Animation musicale et programmation adaptées à vos goûts,
+            votre public et au rythme de votre soirée.
           </p>
 
         </article>
-
 
         <article class="card">
 
           <div class="icon">🔊</div>
 
-          <h3>
-            Sonorisation
-          </h3>
+          <h3>Sonorisation</h3>
 
           <p>
             Sonorisation adaptée pour la piste de danse,
@@ -564,14 +467,11 @@ footer strong{
 
         </article>
 
-
         <article class="card">
 
           <div class="icon">✨</div>
 
-          <h3>
-            Éclairage
-          </h3>
+          <h3>Éclairage</h3>
 
           <p>
             Éclairages de piste de danse et ambiance lumineuse
@@ -580,24 +480,18 @@ footer strong{
 
         </article>
 
-
         <article class="card">
 
           <div class="icon">📸</div>
 
-          <h3>
-            Photographe mariage
-          </h3>
+          <h3>Photographe mariage</h3>
 
           <p>
             Une prestation photographique pensée pour immortaliser
             les moments forts de votre mariage.
           </p>
 
-          <a
-            class="page-link"
-            href="photographe-mariage.html"
-          >
+          <a class="page-link" href="photographe-mariage.html">
             Découvrir Photographe mariage
           </a>
 
@@ -609,28 +503,19 @@ footer strong{
 
   </section>
 
-
-  <!-- PRESENTATION -->
-
   <section id="presentation">
 
     <div class="container">
 
-      <div class="eyebrow">
-        Fête La Fête Event
-      </div>
+      <div class="eyebrow">Fête La Fête Event</div>
 
-      <h2>
-        Votre événement, notre savoir-faire
-      </h2>
+      <h2>Votre événement, notre savoir-faire</h2>
 
       <div class="presentation">
 
         <div class="presentation-box">
 
-          <h3>
-            Une prestation DJ complète
-          </h3>
+          <h3>Une prestation DJ complète</h3>
 
           <p>
             Nous assurons l'animation musicale de votre événement,
@@ -646,15 +531,9 @@ footer strong{
 
         </div>
 
+        <div class="presentation-box" id="photo">
 
-        <div
-          class="presentation-box"
-          id="photo"
-        >
-
-          <h3>
-            DJ et photographe mariage
-          </h3>
+          <h3>DJ et photographe mariage</h3>
 
           <p>
             Fête La Fête Event propose également une prestation
@@ -663,10 +542,7 @@ footer strong{
             souvenirs photographiques de votre journée.
           </p>
 
-          <a
-            class="page-link"
-            href="dj-photographe-mariage.html"
-          >
+          <a class="page-link" href="dj-photographe-mariage.html">
             Découvrir DJ + Photographe mariage
           </a>
 
@@ -674,18 +550,11 @@ footer strong{
 
       </div>
 
-
-      <!-- BORNE A SELFIE -->
-
       <div class="booth">
 
-        <div class="icon">
-          📷
-        </div>
+        <div class="icon">📷</div>
 
-        <h3>
-          Borne à selfie en complément
-        </h3>
+        <h3>Borne à selfie en complément</h3>
 
         <p>
           La borne à selfie est proposée uniquement en complément
@@ -700,16 +569,11 @@ footer strong{
 
   </section>
 
-
-  <!-- ZONES -->
-
   <section id="zones">
 
     <div class="container">
 
-      <div class="eyebrow">
-        Zone d'intervention
-      </div>
+      <div class="eyebrow">Zone d'intervention</div>
 
       <h2>
         DJ et photographe en Isère et Auvergne-Rhône-Alpes
@@ -742,20 +606,13 @@ footer strong{
 
   </section>
 
-
-  <!-- DEVIS -->
-
   <section id="devis">
 
     <div class="container">
 
-      <div class="eyebrow">
-        Votre projet
-      </div>
+      <div class="eyebrow">Votre projet</div>
 
-      <h2>
-        Demandez votre devis
-      </h2>
+      <h2>Demandez votre devis</h2>
 
       <p class="intro">
         Décrivez-nous votre projet et vos besoins.
@@ -765,12 +622,9 @@ footer strong{
 
       <div class="contact-grid">
 
-
         <div class="contact-box">
 
-          <h3>
-            Fête La Fête Event
-          </h3>
+          <h3>Fête La Fête Event</h3>
 
           <p>
             DJ mariage · Animation musicale · Sonorisation ·
@@ -781,10 +635,7 @@ footer strong{
           <p>
             <strong>Téléphone</strong><br>
 
-            <a
-              class="contact-link"
-              href="tel:+33611813395"
-            >
+            <a class="contact-link" href="tel:+33611813395">
               06 11 81 33 95
             </a>
           </p>
@@ -806,7 +657,6 @@ footer strong{
           </p>
 
         </div>
-
 
         <div class="form-box">
 
@@ -841,34 +691,23 @@ footer strong{
               placeholder="Date de l'événement"
             >
 
-            <select
-              name="prestation"
-              required
-            >
+            <select name="prestation" required>
 
               <option value="">
                 Prestation souhaitée
               </option>
 
-              <option>
-                DJ seul
-              </option>
+              <option>DJ seul</option>
 
-              <option>
-                Photographe mariage
-              </option>
+              <option>Photographe mariage</option>
 
-              <option>
-                DJ + Photographe mariage
-              </option>
+              <option>DJ + Photographe mariage</option>
 
               <option>
                 DJ + Photographe + Borne à selfie
               </option>
 
-              <option>
-                Autre demande
-              </option>
+              <option>Autre demande</option>
 
             </select>
 
@@ -893,17 +732,11 @@ footer strong{
 
 </main>
 
-
-<!-- FOOTER -->
-
 <footer>
 
   <div class="container">
 
-    <strong>
-      Fête La Fête Event
-    </strong>
-
+    <strong>Fête La Fête Event</strong>
     · DJ mariage et photographe mariage en Isère
     et Auvergne-Rhône-Alpes.
 
@@ -917,3 +750,4 @@ footer strong{
 
 </body>
 </html>
+```
