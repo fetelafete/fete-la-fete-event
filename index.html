@@ -1,394 +1,591 @@
-```html
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DJ mariage et photographe mariage en Isère | Fête La Fête Event</title>
+  <title>DJ mariage & photographe mariage en Isère | Fête La Fête Event</title>
 
-<meta name="description" content="Fête La Fête Event : DJ mariage et photographe mariage en Isère et Auvergne-Rhône-Alpes. DJ, animation musicale, sonorisation, éclairage et photographie pour vos mariages et événements.">
+  <meta
+    name="description"
+    content="Fête La Fête Event, DJ mariage et photographe mariage en Isère. Animation musicale, sonorisation, éclairage et photographie pour mariages et événements en Auvergne-Rhône-Alpes."
+  >
 
-<meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fetelafete-event.fr/">
 
-<link rel="canonical" href="https://fetelafete-event.fr/">
+  <meta name="theme-color" content="#050505">
 
-<meta property="og:title" content="Fête La Fête Event | DJ mariage et photographe mariage">
-<meta property="og:description" content="DJ mariage, photographe mariage, sonorisation et éclairage pour vos événements en Isère et Auvergne-Rhône-Alpes.">
-<meta property="og:image" content="https://fetelafete-event.fr/visuel-fete-la-fete-site.png">
-<meta property="og:url" content="https://fetelafete-event.fr/">
-<meta property="og:type" content="website">
+  <style>
+    :root{
+      --gold:#d9a441;
+      --gold2:#f5d27a;
+      --black:#050505;
+      --dark:#0c0c0e;
+      --text:#f5f2eb;
+      --muted:#bcb8ae;
+      --line:rgba(217,164,65,.35);
+    }
 
-<style>
-:root{
-  --gold:#d9a441;
-  --gold2:#f5d27a;
-  --black:#050505;
-  --dark:#0c0c0e;
-  --text:#f5f2eb;
-  --muted:#bcb8ae;
-  --line:rgba(217,164,65,.35);
-}
+    *{
+      box-sizing:border-box;
+    }
 
-*{box-sizing:border-box}
+    html{
+      scroll-behavior:smooth;
+    }
 
-html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--black);
+      color:var(--text);
+      font-family:Arial,Helvetica,sans-serif;
+      line-height:1.7;
+    }
 
-body{
-  margin:0;
-  background:var(--black);
-  color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.6;
-}
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
 
-a{
-  color:inherit;
-  text-decoration:none;
-}
+    img{
+      max-width:100%;
+      display:block;
+    }
 
-img{
-  max-width:100%;
-  display:block;
-}
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
+    }
 
-.container{
-  width:min(1180px,92%);
-  margin:auto;
-}
+    header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(5,5,5,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
 
-header{
-  position:sticky;
-  top:0;
-  z-index:20;
-  background:rgba(5,5,5,.94);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);
-}
+    .nav{
+      min-height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+    }
 
-.nav{
-  min-height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
+    .logo-link{
+      display:flex;
+      align-items:center;
+      flex-shrink:0;
+    }
 
-.logo{
-  font-weight:800;
-  letter-spacing:2px;
-  color:var(--gold2);
-  font-size:20px;
-}
+    .logo-image{
+      width:185px;
+      height:auto;
+      max-height:58px;
+      object-fit:contain;
+    }
 
-.logo span{
-  display:block;
-  font-size:10px;
-  letter-spacing:4px;
-  color:#fff;
-  text-align:center;
-}
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      justify-content:flex-end;
+      align-items:center;
+    }
 
-nav{
-  display:flex;
-  flex-wrap:wrap;
-  gap:22px;
-  justify-content:flex-end;
-}
+    nav a{
+      font-size:14px;
+      color:#eee;
+      transition:.25s;
+    }
 
-nav a{
-  font-size:14px;
-  color:#eee;
-}
+    nav a:hover{
+      color:var(--gold2);
+    }
 
-nav a:hover{
-  color:var(--gold2);
-}
+    .hero{
+      padding:24px 0 55px;
+    }
 
-.hero{
-  padding:24px 0 42px;
-}
+    .hero img{
+      width:100%;
+      height:auto;
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:0 20px 70px rgba(0,0,0,.65);
+    }
 
-.hero img{
-  width:100%;
-  height:auto;
-  border:1px solid var(--line);
-  border-radius:18px;
-  box-shadow:0 20px 70px rgba(0,0,0,.65);
-}
+    section{
+      padding:78px 0;
+      border-top:1px solid rgba(255,255,255,.07);
+    }
 
-section{
-  padding:70px 0;
-  border-top:1px solid rgba(255,255,255,.07);
-}
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:3px;
+      color:var(--gold2);
+      font-size:12px;
+      font-weight:700;
+      margin-bottom:8px;
+    }
 
-.eyebrow{
-  text-transform:uppercase;
-  letter-spacing:3px;
-  color:var(--gold2);
-  font-size:12px;
-  font-weight:700;
-}
+    h1,
+    h2,
+    h3{
+      margin-top:0;
+    }
 
-h1,h2,h3{
-  margin-top:0;
-}
+    h1{
+      font-size:clamp(32px,5vw,52px);
+      line-height:1.1;
+      margin-bottom:18px;
+    }
 
-h1{
-  font-size:clamp(32px,5vw,52px);
-  line-height:1.1;
-  margin-bottom:16px;
-}
+    h2{
+      font-size:clamp(28px,4vw,42px);
+      line-height:1.15;
+      margin-bottom:16px;
+    }
 
-h2{
-  font-size:clamp(28px,4vw,44px);
-  line-height:1.15;
-  margin-bottom:14px;
-}
+    h3{
+      font-size:21px;
+      line-height:1.25;
+      margin-bottom:10px;
+    }
 
-.intro{
-  max-width:800px;
-  color:var(--muted);
-  font-size:17px;
-}
+    p{
+      margin-top:0;
+    }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  margin-top:30px;
-}
+    .intro{
+      max-width:850px;
+      color:var(--muted);
+      font-size:17px;
+    }
 
-.card{
-  background:linear-gradient(145deg,#111113,#090909);
-  border:1px solid var(--line);
-  border-radius:16px;
-  padding:26px;
-}
+    .intro strong{
+      color:#fff;
+    }
 
-.icon{
-  font-size:30px;
-  color:var(--gold2);
-  margin-bottom:12px;
-}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      margin-top:34px;
+    }
 
-.card h3{
-  margin-bottom:8px;
-  color:#fff;
-}
+    .card{
+      background:linear-gradient(145deg,#111113,#090909);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:27px;
+      display:flex;
+      flex-direction:column;
+    }
 
-.card p{
-  margin:0;
-  color:var(--muted);
-  font-size:14px;
-}
+    .icon{
+      font-size:30px;
+      color:var(--gold2);
+      margin-bottom:12px;
+    }
 
-.page-link{
-  display:inline-block;
-  margin-top:20px;
-  padding:10px 18px;
-  border:1px solid var(--gold);
-  border-radius:30px;
-  color:var(--gold2);
-  font-size:13px;
-  font-weight:700;
-  transition:.25s;
-}
+    .card h3{
+      color:#fff;
+    }
 
-.page-link:hover{
-  background:var(--gold);
-  color:#050505;
-}
+    .card p{
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:0;
+    }
 
-.presentation{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-  margin-top:30px;
-}
+    .page-link{
+      display:inline-block;
+      margin-top:20px;
+      padding:10px 18px;
+      border:1px solid var(--gold);
+      border-radius:30px;
+      color:var(--gold2);
+      font-size:13px;
+      font-weight:700;
+      transition:.25s;
+      align-self:flex-start;
+    }
 
-.presentation-box{
-  background:#0c0c0e;
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:30px;
-}
+    .page-link:hover{
+      background:var(--gold);
+      color:#050505;
+    }
 
-.presentation-box p{
-  color:var(--muted);
-}
+    .presentation{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      margin-top:34px;
+    }
 
-.booth{
-  margin-top:28px;
-  background:linear-gradient(145deg,#121214,#070707);
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:30px;
-}
+    .presentation-box{
+      background:#0c0c0e;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:30px;
+    }
 
-.booth p{
-  color:var(--muted);
-  margin-bottom:0;
-}
+    .presentation-box p{
+      color:var(--muted);
+    }
 
-.zones{
-  columns:3;
-  column-gap:40px;
-  color:#ddd;
-  margin-top:24px;
-}
+    .presentation-box strong{
+      color:#fff;
+    }
 
-.zones div{
-  break-inside:avoid;
-  padding:5px 0;
-}
+    .service-list{
+      margin:18px 0 0;
+      padding-left:20px;
+      color:var(--muted);
+    }
 
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-  margin-top:30px;
-}
+    .service-list li{
+      margin-bottom:7px;
+    }
 
-.contact-box,
-.form-box{
-  background:#0c0c0e;
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:30px;
-}
+    .booth{
+      margin-top:28px;
+      background:linear-gradient(145deg,#121214,#070707);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:30px;
+    }
 
-.contact-box p{
-  color:var(--muted);
-}
+    .booth p{
+      color:var(--muted);
+      margin-bottom:0;
+    }
 
-.contact-link{
-  color:var(--gold2);
-  font-weight:700;
-}
+    .zones{
+      columns:3;
+      column-gap:40px;
+      color:#ddd;
+      margin-top:28px;
+    }
 
-form{
-  display:grid;
-  gap:14px;
-}
+    .zones div{
+      break-inside:avoid;
+      padding:6px 0;
+    }
 
-input,
-textarea,
-select{
-  width:100%;
-  padding:14px 15px;
-  background:#050505;
-  color:#fff;
-  border:1px solid rgba(255,255,255,.18);
-  border-radius:9px;
-  font:inherit;
-}
+    .zones div::before{
+      content:"•";
+      color:var(--gold2);
+      margin-right:9px;
+    }
 
-textarea{
-  min-height:140px;
-  resize:vertical;
-}
+    .seo-text{
+      max-width:900px;
+      margin-top:30px;
+      color:var(--muted);
+    }
 
-button{
-  cursor:pointer;
-  padding:14px 20px;
-  border:0;
-  border-radius:30px;
-  background:linear-gradient(135deg,#f5d27a,#c58b2c);
-  color:#080808;
-  font-weight:800;
-}
+    .seo-text p{
+      margin-bottom:18px;
+    }
 
-footer{
-  padding:35px 0;
-  color:#999;
-  border-top:1px solid var(--line);
-  font-size:13px;
-}
+    .seo-text strong{
+      color:#fff;
+    }
 
-footer strong{
-  color:var(--gold2);
-}
+    .cta-box{
+      margin-top:34px;
+      padding:30px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:linear-gradient(145deg,#121214,#080808);
+    }
 
-@media(max-width:850px){
+    .cta-box p{
+      color:var(--muted);
+      margin-bottom:18px;
+    }
 
-  .cards{
-    grid-template-columns:repeat(2,1fr);
+    .cta{
+      display:inline-block;
+      padding:13px 24px;
+      border-radius:30px;
+      background:linear-gradient(135deg,#f5d27a,#c58b2c);
+      color:#080808;
+      font-weight:800;
+      transition:.25s;
+    }
+
+    .cta:hover{
+      transform:translateY(-1px);
+      box-shadow:0 8px 25px rgba(217,164,65,.18);
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      margin-top:34px;
+    }
+
+    .contact-box,
+    .form-box{
+      background:#0c0c0e;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:30px;
+    }
+
+    .contact-box p{
+      color:var(--muted);
+    }
+
+    .contact-link{
+      color:var(--gold2);
+      font-weight:700;
+    }
+
+    form{
+      display:grid;
+      gap:14px;
+    }
+
+    input,
+    textarea,
+    select{
+      width:100%;
+      padding:14px 15px;
+      background:#050505;
+      color:#fff;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:9px;
+      font:inherit;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus{
+      outline:none;
+      border-color:var(--gold);
+    }
+
+    textarea{
+      min-height:150px;
+      resize:vertical;
+    }
+
+    button{
+      cursor:pointer;
+      padding:14px 20px;
+      border:0;
+      border-radius:30px;
+      background:linear-gradient(135deg,#f5d27a,#c58b2c);
+      color:#080808;
+      font-weight:800;
+      font-size:15px;
+    }
+
+    footer{
+      padding:38px 0;
+      color:#999;
+      border-top:1px solid var(--line);
+      font-size:13px;
+    }
+
+    footer strong{
+      color:var(--gold2);
+    }
+
+    @media(max-width:1000px){
+
+      .cards{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .presentation,
+      .contact-grid{
+        grid-template-columns:1fr;
+      }
+
+      nav{
+        gap:12px;
+      }
+    }
+
+    @media(max-width:650px){
+
+      .nav{
+        align-items:center;
+        padding:12px 0;
+        flex-direction:column;
+      }
+
+      .logo-image{
+        width:170px;
+      }
+
+      nav{
+        width:100%;
+        justify-content:center;
+        gap:9px 15px;
+      }
+
+      nav a{
+        font-size:13px;
+      }
+
+      .hero{
+        padding-top:12px;
+      }
+
+      section{
+        padding:60px 0;
+      }
+
+      .cards{
+        grid-template-columns:1fr;
+      }
+
+      .zones{
+        columns:2;
+      }
+
+      .page-link,
+      .cta{
+        width:100%;
+        text-align:center;
+      }
+    }
+
+    @media(max-width:420px){
+
+      .zones{
+        columns:1;
+      }
+
+      h1{
+        font-size:34px;
+      }
+
+      h2{
+        font-size:29px;
+      }
+    }
+  </style>
+
+  <!-- Données structurées : identité de l'entreprise -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "@id":"https://fetelafete-event.fr/#organization",
+    "name":"Fête La Fête Event",
+    "url":"https://fetelafete-event.fr/",
+    "logo":"https://fetelafete-event.fr/logo-fete-la-fete-event.png",
+    "telephone":"+33611813395",
+    "email":"fetelafete.djsim@gmail.com",
+    "areaServed":[
+      {
+        "@type":"AdministrativeArea",
+        "name":"Isère"
+      },
+      {
+        "@type":"AdministrativeArea",
+        "name":"Auvergne-Rhône-Alpes"
+      },
+      {
+        "@type":"City",
+        "name":"Bourgoin-Jallieu"
+      },
+      {
+        "@type":"City",
+        "name":"Grenoble"
+      },
+      {
+        "@type":"City",
+        "name":"Voiron"
+      },
+      {
+        "@type":"City",
+        "name":"Vienne"
+      },
+      {
+        "@type":"City",
+        "name":"Lyon"
+      },
+      {
+        "@type":"City",
+        "name":"Chambéry"
+      },
+      {
+        "@type":"City",
+        "name":"Annecy"
+      },
+      {
+        "@type":"City",
+        "name":"Valence"
+      },
+      {
+        "@type":"City",
+        "name":"Saint-Étienne"
+      }
+    ],
+    "sameAs":[]
   }
+  </script>
 
-  .presentation,
-  .contact-grid{
-    grid-template-columns:1fr;
+  <!-- Données structurées : services -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Service",
+        "@id":"https://fetelafete-event.fr/#dj-mariage",
+        "name":"DJ mariage en Isère",
+        "provider":{
+          "@id":"https://fetelafete-event.fr/#organization"
+        },
+        "areaServed":{
+          "@type":"AdministrativeArea",
+          "name":"Isère"
+        },
+        "serviceType":"DJ mariage"
+      },
+      {
+        "@type":"Service",
+        "@id":"https://fetelafete-event.fr/#photographe-mariage",
+        "name":"Photographe mariage en Isère",
+        "provider":{
+          "@id":"https://fetelafete-event.fr/#organization"
+        },
+        "areaServed":{
+          "@type":"AdministrativeArea",
+          "name":"Isère"
+        },
+        "serviceType":"Photographe mariage"
+      },
+      {
+        "@type":"Service",
+        "@id":"https://fetelafete-event.fr/#dj-photographe-mariage",
+        "name":"DJ et photographe mariage",
+        "provider":{
+          "@id":"https://fetelafete-event.fr/#organization"
+        },
+        "areaServed":{
+          "@type":"AdministrativeArea",
+          "name":"Auvergne-Rhône-Alpes"
+        },
+        "serviceType":"DJ et photographe mariage"
+      }
+    ]
   }
+  </script>
 
-  nav{
-    gap:10px;
-  }
-}
-
-@media(max-width:560px){
-
-  .nav{
-    align-items:flex-start;
-    padding:14px 0;
-    flex-direction:column;
-  }
-
-  nav{
-    width:100%;
-    justify-content:flex-start;
-  }
-
-  .hero{
-    padding-top:12px;
-  }
-
-  .cards{
-    grid-template-columns:1fr;
-  }
-
-  .zones{
-    columns:2;
-  }
-
-  .page-link{
-    width:100%;
-    text-align:center;
-  }
-}
-</style>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"ProfessionalService",
-  "name":"Fête La Fête Event",
-  "url":"https://fetelafete-event.fr/",
-  "telephone":"+33611813395",
-  "email":"fetelafete.djsim@gmail.com",
-  "areaServed":[
-    "Isère",
-    "Auvergne-Rhône-Alpes",
-    "Saint-Hilaire-de-la-Côte",
-    "Bourgoin-Jallieu",
-    "Grenoble",
-    "Voiron",
-    "Vienne",
-    "Lyon",
-    "Chambéry",
-    "Annecy",
-    "Valence",
-    "Saint-Étienne"
-  ],
-  "serviceType":[
-    "DJ mariage",
-    "DJ événementiel",
-    "Photographe mariage",
-    "Sonorisation",
-    "Éclairage"
-  ]
-}
-</script>
 </head>
 
 <body>
@@ -396,17 +593,22 @@ footer strong{
 <header>
   <div class="container nav">
 
-    <a class="logo" href="#accueil">
-      FÊTE LA FÊTE
-      <span>EVENT</span>
+    <a class="logo-link" href="#accueil" aria-label="Fête La Fête Event - Accueil">
+      <img
+        class="logo-image"
+        src="logo-fete-la-fete-event.png"
+        alt="Fête La Fête Event"
+        width="185"
+        height="58"
+      >
     </a>
 
-    <nav>
+    <nav aria-label="Navigation principale">
       <a href="#prestations">Prestations</a>
-      <a href="#presentation">À propos</a>
-      <a href="#photo">DJ + Photographe</a>
+      <a href="#dj-mariage">DJ mariage</a>
+      <a href="#photographe">Photographe</a>
       <a href="#zones">Zones</a>
-      <a href="#devis">Votre devis</a>
+      <a href="#devis">Demander un devis</a>
     </nav>
 
   </div>
@@ -414,30 +616,42 @@ footer strong{
 
 <main id="accueil">
 
+  <!-- HERO -->
   <div class="container hero">
 
     <img
       src="visuel-fete-la-fete-site.png"
-      alt="Fête La Fête Event - DJ mariage et photographe mariage en Isère"
+      alt="DJ mariage et photographe mariage en Isère - Fête La Fête Event"
+      width="1180"
+      height="auto"
       loading="eager"
+      fetchpriority="high"
     >
 
   </div>
 
+
+  <!-- PRESENTATION PRINCIPALE -->
   <section id="prestations">
 
     <div class="container">
 
-      <div class="eyebrow">Nos prestations</div>
+      <div class="eyebrow">DJ mariage & photographe mariage</div>
 
       <h1>DJ mariage et photographe mariage en Isère</h1>
 
       <p class="intro">
-        Fête La Fête Event vous accompagne pour vos mariages,
-        anniversaires, soirées privées et événements professionnels
-        avec une prestation musicale, technique et photographique
-        adaptée à votre projet.
+        <strong>Fête La Fête Event</strong> accompagne les particuliers et les professionnels
+        pour leurs mariages, anniversaires, soirées privées et événements professionnels
+        en Isère et en Auvergne-Rhône-Alpes.
       </p>
+
+      <p class="intro">
+        Notre activité réunit <strong>DJ mariage, animation musicale, sonorisation,
+        éclairage et photographie</strong> afin de vous proposer une prestation adaptée
+        à votre événement, à votre lieu et à l'ambiance que vous souhaitez créer.
+      </p>
+
 
       <div class="cards">
 
@@ -445,50 +659,57 @@ footer strong{
 
           <div class="icon">🎧</div>
 
-          <h3>DJ mariage</h3>
+          <h2>DJ mariage</h2>
 
           <p>
             Animation musicale et programmation adaptées à vos goûts,
-            votre public et au rythme de votre soirée.
+            à vos invités et au rythme de votre soirée de mariage.
           </p>
 
+          <a class="page-link" href="#dj-mariage">
+            Découvrir la prestation DJ
+          </a>
+
         </article>
+
 
         <article class="card">
 
           <div class="icon">🔊</div>
 
-          <h3>Sonorisation</h3>
+          <h2>Sonorisation</h2>
 
           <p>
-            Sonorisation adaptée pour la piste de danse,
-            le vin d'honneur et/ou la cérémonie.
+            Une sonorisation adaptée à votre événement pour le vin d'honneur,
+            la cérémonie et la piste de danse.
           </p>
 
         </article>
+
 
         <article class="card">
 
           <div class="icon">✨</div>
 
-          <h3>Éclairage</h3>
+          <h2>Éclairage</h2>
 
           <p>
-            Éclairages de piste de danse et ambiance lumineuse
-            pour mettre votre événement en valeur.
+            Une mise en lumière pensée pour créer une ambiance dynamique
+            et mettre votre espace de réception en valeur.
           </p>
 
         </article>
+
 
         <article class="card">
 
           <div class="icon">📸</div>
 
-          <h3>Photographe mariage</h3>
+          <h2>Photographe mariage</h2>
 
           <p>
-            Une prestation photographique pensée pour immortaliser
-            les moments forts de votre mariage.
+            Une prestation photographique consacrée aux moments forts
+            de votre journée, des préparatifs aux souvenirs de votre réception.
           </p>
 
           <a class="page-link" href="photographe-mariage.html">
@@ -503,43 +724,100 @@ footer strong{
 
   </section>
 
+
+  <!-- DJ MARIAGE -->
+  <section id="dj-mariage">
+
+    <div class="container">
+
+      <div class="eyebrow">Animation musicale</div>
+
+      <h2>DJ mariage en Isère pour une soirée à votre image</h2>
+
+      <div class="seo-text">
+
+        <p>
+          Votre mariage mérite une animation musicale pensée autour de vos envies.
+          <strong>Fête La Fête Event propose une prestation DJ mariage en Isère</strong>
+          avec une programmation adaptée à votre couple, à vos invités et à l'ambiance
+          recherchée.
+        </p>
+
+        <p>
+          L'objectif est de vous accompagner musicalement tout au long de votre événement :
+          arrivée des invités, vin d'honneur, repas, animations, ouverture de bal
+          et soirée dansante.
+        </p>
+
+        <p>
+          La prestation peut également intégrer la <strong>sonorisation du vin d'honneur,
+          de la cérémonie laïque et de la piste de danse</strong>, ainsi qu'un éclairage
+          adapté à votre espace de réception.
+        </p>
+
+        <ul class="service-list">
+          <li>Animation musicale de votre mariage</li>
+          <li>Programmation musicale adaptée à vos goûts</li>
+          <li>Sonorisation du vin d'honneur et de la soirée</li>
+          <li>Possibilité de sonorisation de cérémonie laïque</li>
+          <li>Éclairage de la piste de danse</li>
+          <li>Accompagnement des temps forts de votre réception</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRESENTATION / DJ + PHOTO -->
   <section id="presentation">
 
     <div class="container">
 
       <div class="eyebrow">Fête La Fête Event</div>
 
-      <h2>Votre événement, notre savoir-faire</h2>
+      <h2>DJ et photographe mariage : deux prestations réunies</h2>
 
       <div class="presentation">
 
-        <div class="presentation-box">
+        <div class="presentation-box" id="photographe">
 
-          <h3>Une prestation DJ complète</h3>
+          <h3>Photographe mariage en Isère</h3>
 
           <p>
-            Nous assurons l'animation musicale de votre événement,
-            la sonorisation, l'éclairage de la piste de danse,
-            ainsi que les besoins techniques nécessaires au bon
-            déroulement de votre soirée.
+            La photographie permet de conserver les moments importants de votre mariage :
+            les préparatifs, les échanges, les détails, les proches, les moments spontanés
+            et les temps forts de la réception.
           </p>
 
           <p>
-            Chaque programmation musicale est adaptée à vos envies,
-            à vos invités et à l'ambiance recherchée.
+            Fête La Fête Event propose une prestation de
+            <strong>photographe mariage en Isère</strong>, avec une approche pensée
+            pour raconter votre journée à travers vos souvenirs photographiques.
           </p>
+
+          <a class="page-link" href="photographe-mariage.html">
+            Découvrir Photographe mariage
+          </a>
 
         </div>
 
-        <div class="presentation-box" id="photo">
 
-          <h3>DJ et photographe mariage</h3>
+        <div class="presentation-box">
+
+          <h3>DJ + photographe mariage</h3>
 
           <p>
-            Fête La Fête Event propose également une prestation
-            réunissant DJ et photographe mariage afin de vous
-            accompagner à la fois pour l'ambiance et pour les
-            souvenirs photographiques de votre journée.
+            Vous recherchez à la fois un <strong>DJ mariage et un photographe mariage</strong> ?
+            Fête La Fête Event réunit ces deux prestations pour vous accompagner
+            sur l'ambiance musicale et les souvenirs photographiques de votre journée.
+          </p>
+
+          <p>
+            Cette formule permet de centraliser votre projet auprès d'un même prestataire
+            et de préparer ensemble les différents temps forts de votre mariage.
           </p>
 
           <a class="page-link" href="dj-photographe-mariage.html">
@@ -550,6 +828,8 @@ footer strong{
 
       </div>
 
+
+      <!-- BORNE -->
       <div class="booth">
 
         <div class="icon">📷</div>
@@ -557,10 +837,9 @@ footer strong{
         <h3>Borne à selfie en complément</h3>
 
         <p>
-          La borne à selfie est proposée uniquement en complément
-          d'une prestation DJ ou DJ + Photographe. Elle permet à vos
-          invités de réaliser leurs propres souvenirs pendant votre
-          événement.
+          La borne à selfie est proposée uniquement en complément d'une prestation
+          <strong>DJ</strong> ou <strong>DJ + Photographe mariage</strong>.
+          Elle permet à vos invités de créer leurs propres souvenirs pendant votre événement.
         </p>
 
       </div>
@@ -569,21 +848,56 @@ footer strong{
 
   </section>
 
+
+  <!-- MARIAGE / EVENEMENTS -->
+  <section id="evenements">
+
+    <div class="container">
+
+      <div class="eyebrow">Vos événements</div>
+
+      <h2>DJ et photographe pour vos événements</h2>
+
+      <div class="seo-text">
+
+        <p>
+          Fête La Fête Event intervient pour différents types d'événements,
+          avec une prestation adaptée au lieu, au public et au déroulement
+          de votre réception.
+        </p>
+
+        <p>
+          <strong>Mariage, anniversaire, soirée privée ou événement professionnel</strong> :
+          nous étudions votre projet afin de définir les besoins en animation musicale,
+          sonorisation, éclairage et photographie.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ZONES -->
   <section id="zones">
 
     <div class="container">
 
       <div class="eyebrow">Zone d'intervention</div>
 
-      <h2>
-        DJ et photographe en Isère et Auvergne-Rhône-Alpes
-      </h2>
+      <h2>DJ mariage et photographe en Isère et Auvergne-Rhône-Alpes</h2>
 
       <p class="intro">
-        Basé à Saint-Hilaire-de-la-Côte, Fête La Fête Event
-        se déplace directement sur le lieu de votre mariage
-        ou de votre événement.
+        Basé à <strong>Saint-Hilaire-de-la-Côte</strong>, Fête La Fête Event
+        se déplace directement sur le lieu de votre mariage ou de votre événement.
       </p>
+
+      <p class="intro">
+        Nous intervenons notamment dans plusieurs secteurs de l'Isère
+        et plus largement en Auvergne-Rhône-Alpes.
+      </p>
+
 
       <div class="zones">
 
@@ -602,23 +916,37 @@ footer strong{
 
       </div>
 
+
+      <div class="seo-text">
+
+        <p>
+          Que votre réception se déroule près de Bourgoin-Jallieu, Grenoble,
+          Voiron, Vienne ou dans une autre commune de la région,
+          vous pouvez nous présenter votre projet afin de vérifier
+          les possibilités d'intervention.
+        </p>
+
+      </div>
+
     </div>
 
   </section>
 
+
+  <!-- DEVIS -->
   <section id="devis">
 
     <div class="container">
 
       <div class="eyebrow">Votre projet</div>
 
-      <h2>Demandez votre devis</h2>
+      <h2>Demandez votre devis pour votre événement</h2>
 
       <p class="intro">
-        Décrivez-nous votre projet et vos besoins.
-        Nous vous répondrons avec une proposition adaptée
-        à votre événement.
+        Décrivez-nous votre projet, votre date, votre lieu et vos besoins.
+        Nous vous répondrons avec une proposition adaptée à votre événement.
       </p>
+
 
       <div class="contact-grid">
 
@@ -627,14 +955,12 @@ footer strong{
           <h3>Fête La Fête Event</h3>
 
           <p>
-            DJ mariage · Animation musicale · Sonorisation ·
-            Éclairage · Photographe mariage · Borne à selfie
-            en complément
+            DJ mariage · Animation musicale · Sonorisation · Éclairage ·
+            Photographe mariage · Borne à selfie en complément
           </p>
 
           <p>
             <strong>Téléphone</strong><br>
-
             <a class="contact-link" href="tel:+33611813395">
               06 11 81 33 95
             </a>
@@ -642,7 +968,6 @@ footer strong{
 
           <p>
             <strong>E-mail</strong><br>
-
             <a
               class="contact-link"
               href="mailto:fetelafete.djsim@gmail.com"
@@ -652,13 +977,26 @@ footer strong{
           </p>
 
           <p>
-            Déplacement dans toute la région
-            Auvergne-Rhône-Alpes.
+            Déplacement dans l'Isère et en Auvergne-Rhône-Alpes.
           </p>
+
+          <div class="cta-box">
+
+            <p>
+              Vous préparez votre mariage ou votre événement ?
+              Présentez-nous votre projet.
+            </p>
+
+            <a class="cta" href="#formulaire">
+              Demander un devis
+            </a>
+
+          </div>
 
         </div>
 
-        <div class="form-box">
+
+        <div class="form-box" id="formulaire">
 
           <form
             action="https://formspree.io/f/xoeagnag"
@@ -669,6 +1007,7 @@ footer strong{
               type="text"
               name="nom"
               placeholder="Nom / prénom"
+              autocomplete="name"
               required
             >
 
@@ -676,6 +1015,7 @@ footer strong{
               type="email"
               name="email"
               placeholder="Votre e-mail"
+              autocomplete="email"
               required
             >
 
@@ -683,6 +1023,7 @@ footer strong{
               type="tel"
               name="telephone"
               placeholder="Téléphone"
+              autocomplete="tel"
             >
 
             <input
@@ -697,15 +1038,15 @@ footer strong{
                 Prestation souhaitée
               </option>
 
-              <option>DJ seul</option>
+              <option>DJ mariage</option>
 
               <option>Photographe mariage</option>
 
               <option>DJ + Photographe mariage</option>
 
-              <option>
-                DJ + Photographe + Borne à selfie
-              </option>
+              <option>DJ + Borne à selfie</option>
+
+              <option>DJ + Photographe + Borne à selfie</option>
 
               <option>Autre demande</option>
 
@@ -717,7 +1058,7 @@ footer strong{
             ></textarea>
 
             <button type="submit">
-              Envoyer ma demande
+              Demander un devis
             </button>
 
           </form>
@@ -732,15 +1073,20 @@ footer strong{
 
 </main>
 
+
 <footer>
 
   <div class="container">
 
     <strong>Fête La Fête Event</strong>
-    · DJ mariage et photographe mariage en Isère
-    et Auvergne-Rhône-Alpes.
+    · DJ mariage et photographe mariage en Isère et Auvergne-Rhône-Alpes.
 
-    <br>
+    <br><br>
+
+    DJ mariage · Photographe mariage · DJ + Photographe ·
+    Animation musicale · Sonorisation · Éclairage
+
+    <br><br>
 
     © 2026 Fête La Fête Event — Tous droits réservés.
 
@@ -750,4 +1096,3 @@ footer strong{
 
 </body>
 </html>
-```
