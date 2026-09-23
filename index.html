@@ -27,13 +27,9 @@
       --line:rgba(217,164,65,.35);
     }
 
-    *{
-      box-sizing:border-box;
-    }
+    *{box-sizing:border-box;}
 
-    html{
-      scroll-behavior:smooth;
-    }
+    html{scroll-behavior:smooth;}
 
     body{
       margin:0;
@@ -132,9 +128,7 @@
       margin-bottom:8px;
     }
 
-    h1,
-    h2,
-    h3{
+    h1,h2,h3{
       margin-top:0;
     }
 
@@ -401,7 +395,6 @@
     }
 
     @media(max-width:1000px){
-
       .cards{
         grid-template-columns:repeat(2,1fr);
       }
@@ -417,7 +410,6 @@
     }
 
     @media(max-width:650px){
-
       .nav{
         align-items:center;
         padding:12px 0;
@@ -462,7 +454,6 @@
     }
 
     @media(max-width:420px){
-
       .zones{
         columns:1;
       }
@@ -477,7 +468,6 @@
     }
   </style>
 
-  <!-- Données structurées : identité de l'entreprise -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -489,56 +479,22 @@
     "telephone":"+33611813395",
     "email":"fetelafete.djsim@gmail.com",
     "areaServed":[
-      {
-        "@type":"AdministrativeArea",
-        "name":"Isère"
-      },
-      {
-        "@type":"AdministrativeArea",
-        "name":"Auvergne-Rhône-Alpes"
-      },
-      {
-        "@type":"City",
-        "name":"Bourgoin-Jallieu"
-      },
-      {
-        "@type":"City",
-        "name":"Grenoble"
-      },
-      {
-        "@type":"City",
-        "name":"Voiron"
-      },
-      {
-        "@type":"City",
-        "name":"Vienne"
-      },
-      {
-        "@type":"City",
-        "name":"Lyon"
-      },
-      {
-        "@type":"City",
-        "name":"Chambéry"
-      },
-      {
-        "@type":"City",
-        "name":"Annecy"
-      },
-      {
-        "@type":"City",
-        "name":"Valence"
-      },
-      {
-        "@type":"City",
-        "name":"Saint-Étienne"
-      }
+      {"@type":"AdministrativeArea","name":"Isère"},
+      {"@type":"AdministrativeArea","name":"Auvergne-Rhône-Alpes"},
+      {"@type":"City","name":"Bourgoin-Jallieu"},
+      {"@type":"City","name":"Grenoble"},
+      {"@type":"City","name":"Voiron"},
+      {"@type":"City","name":"Vienne"},
+      {"@type":"City","name":"Lyon"},
+      {"@type":"City","name":"Chambéry"},
+      {"@type":"City","name":"Annecy"},
+      {"@type":"City","name":"Valence"},
+      {"@type":"City","name":"Saint-Étienne"}
     ],
     "sameAs":[]
   }
   </script>
 
-  <!-- Données structurées : services -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -547,45 +503,29 @@
         "@type":"Service",
         "@id":"https://fetelafete-event.fr/#dj-mariage",
         "name":"DJ mariage en Isère",
-        "provider":{
-          "@id":"https://fetelafete-event.fr/#organization"
-        },
-        "areaServed":{
-          "@type":"AdministrativeArea",
-          "name":"Isère"
-        },
+        "provider":{"@id":"https://fetelafete-event.fr/#organization"},
+        "areaServed":{"@type":"AdministrativeArea","name":"Isère"},
         "serviceType":"DJ mariage"
       },
       {
         "@type":"Service",
         "@id":"https://fetelafete-event.fr/#photographe-mariage",
         "name":"Photographe mariage en Isère",
-        "provider":{
-          "@id":"https://fetelafete-event.fr/#organization"
-        },
-        "areaServed":{
-          "@type":"AdministrativeArea",
-          "name":"Isère"
-        },
+        "provider":{"@id":"https://fetelafete-event.fr/#organization"},
+        "areaServed":{"@type":"AdministrativeArea","name":"Isère"},
         "serviceType":"Photographe mariage"
       },
       {
         "@type":"Service",
         "@id":"https://fetelafete-event.fr/#dj-photographe-mariage",
         "name":"DJ et photographe mariage",
-        "provider":{
-          "@id":"https://fetelafete-event.fr/#organization"
-        },
-        "areaServed":{
-          "@type":"AdministrativeArea",
-          "name":"Auvergne-Rhône-Alpes"
-        },
+        "provider":{"@id":"https://fetelafete-event.fr/#organization"},
+        "areaServed":{"@type":"AdministrativeArea","name":"Auvergne-Rhône-Alpes"},
         "serviceType":"DJ et photographe mariage"
       }
     ]
   }
   </script>
-
 </head>
 
 <body>
@@ -616,9 +556,7 @@
 
 <main id="accueil">
 
-  <!-- HERO -->
   <div class="container hero">
-
     <img
       src="visuel-fete-la-fete-site.png"
       alt="DJ mariage et photographe mariage en Isère - Fête La Fête Event"
@@ -627,13 +565,12 @@
       loading="eager"
       fetchpriority="high"
     >
-
   </div>
 
 
-  <!-- PRESENTATION PRINCIPALE -->
-  <section id="prestations">
+  <!-- PRESTATIONS -->
 
+  <section id="prestations">
     <div class="container">
 
       <div class="eyebrow">DJ mariage & photographe mariage</div>
@@ -647,16 +584,16 @@
       </p>
 
       <p class="intro">
-        Notre activité réunit <strong>DJ mariage, animation musicale, sonorisation,
-        éclairage et photographie</strong> afin de vous proposer une prestation adaptée
-        à votre événement, à votre lieu et à l'ambiance que vous souhaitez créer.
+        Notre activité réunit
+        <strong>DJ mariage, animation musicale, sonorisation, éclairage et photographie</strong>
+        afin de vous proposer une prestation adaptée à votre événement,
+        à votre lieu et à l'ambiance que vous souhaitez créer.
       </p>
 
 
       <div class="cards">
 
         <article class="card">
-
           <div class="icon">🎧</div>
 
           <h2>DJ mariage</h2>
@@ -666,15 +603,16 @@
             à vos invités et au rythme de votre soirée de mariage.
           </p>
 
-          <a class="page-link" href="#dj-mariage">
-            Découvrir la prestation DJ
+          <a
+            class="page-link"
+            href="dj-mariage-isere.html"
+          >
+            Découvrir DJ mariage en Isère
           </a>
-
         </article>
 
 
         <article class="card">
-
           <div class="icon">🔊</div>
 
           <h2>Sonorisation</h2>
@@ -683,12 +621,10 @@
             Une sonorisation adaptée à votre événement pour le vin d'honneur,
             la cérémonie et la piste de danse.
           </p>
-
         </article>
 
 
         <article class="card">
-
           <div class="icon">✨</div>
 
           <h2>Éclairage</h2>
@@ -697,12 +633,10 @@
             Une mise en lumière pensée pour créer une ambiance dynamique
             et mettre votre espace de réception en valeur.
           </p>
-
         </article>
 
 
         <article class="card">
-
           <div class="icon">📸</div>
 
           <h2>Photographe mariage</h2>
@@ -712,22 +646,23 @@
             de votre journée, des préparatifs aux souvenirs de votre réception.
           </p>
 
-          <a class="page-link" href="photographe-mariage.html">
+          <a
+            class="page-link"
+            href="photographe-mariage.html"
+          >
             Découvrir Photographe mariage
           </a>
-
         </article>
 
       </div>
 
     </div>
-
   </section>
 
 
   <!-- DJ MARIAGE -->
-  <section id="dj-mariage">
 
+  <section id="dj-mariage">
     <div class="container">
 
       <div class="eyebrow">Animation musicale</div>
@@ -739,20 +674,18 @@
         <p>
           Votre mariage mérite une animation musicale pensée autour de vos envies.
           <strong>Fête La Fête Event propose une prestation DJ mariage en Isère</strong>
-          avec une programmation adaptée à votre couple, à vos invités et à l'ambiance
-          recherchée.
+          avec une programmation adaptée à votre couple, à vos invités et à l'ambiance recherchée.
         </p>
 
         <p>
           L'objectif est de vous accompagner musicalement tout au long de votre événement :
-          arrivée des invités, vin d'honneur, repas, animations, ouverture de bal
-          et soirée dansante.
+          arrivée des invités, vin d'honneur, repas, animations, ouverture de bal et soirée dansante.
         </p>
 
         <p>
-          La prestation peut également intégrer la <strong>sonorisation du vin d'honneur,
-          de la cérémonie laïque et de la piste de danse</strong>, ainsi qu'un éclairage
-          adapté à votre espace de réception.
+          La prestation peut également intégrer la
+          <strong>sonorisation du vin d'honneur, de la cérémonie laïque et de la piste de danse</strong>,
+          ainsi qu'un éclairage adapté à votre espace de réception.
         </p>
 
         <ul class="service-list">
@@ -764,16 +697,22 @@
           <li>Accompagnement des temps forts de votre réception</li>
         </ul>
 
+        <a
+          class="page-link"
+          href="dj-mariage-isere.html"
+        >
+          Découvrir la page DJ mariage en Isère
+        </a>
+
       </div>
 
     </div>
-
   </section>
 
 
-  <!-- PRESENTATION / DJ + PHOTO -->
-  <section id="presentation">
+  <!-- PRESENTATION -->
 
+  <section id="presentation">
     <div class="container">
 
       <div class="eyebrow">Fête La Fête Event</div>
@@ -788,17 +727,21 @@
 
           <p>
             La photographie permet de conserver les moments importants de votre mariage :
-            les préparatifs, les échanges, les détails, les proches, les moments spontanés
-            et les temps forts de la réception.
+            les préparatifs, les échanges, les détails, les proches,
+            les moments spontanés et les temps forts de la réception.
           </p>
 
           <p>
             Fête La Fête Event propose une prestation de
-            <strong>photographe mariage en Isère</strong>, avec une approche pensée
-            pour raconter votre journée à travers vos souvenirs photographiques.
+            <strong>photographe mariage en Isère</strong>,
+            avec une approche pensée pour raconter votre journée
+            à travers vos souvenirs photographiques.
           </p>
 
-          <a class="page-link" href="photographe-mariage.html">
+          <a
+            class="page-link"
+            href="photographe-mariage.html"
+          >
             Découvrir Photographe mariage
           </a>
 
@@ -810,7 +753,8 @@
           <h3>DJ + photographe mariage</h3>
 
           <p>
-            Vous recherchez à la fois un <strong>DJ mariage et un photographe mariage</strong> ?
+            Vous recherchez à la fois un
+            <strong>DJ mariage et un photographe mariage</strong> ?
             Fête La Fête Event réunit ces deux prestations pour vous accompagner
             sur l'ambiance musicale et les souvenirs photographiques de votre journée.
           </p>
@@ -820,7 +764,10 @@
             et de préparer ensemble les différents temps forts de votre mariage.
           </p>
 
-          <a class="page-link" href="dj-photographe-mariage.html">
+          <a
+            class="page-link"
+            href="dj-photographe-mariage.html"
+          >
             Découvrir DJ + Photographe mariage
           </a>
 
@@ -829,7 +776,6 @@
       </div>
 
 
-      <!-- BORNE -->
       <div class="booth">
 
         <div class="icon">📷</div>
@@ -845,13 +791,12 @@
       </div>
 
     </div>
-
   </section>
 
 
-  <!-- MARIAGE / EVENEMENTS -->
-  <section id="evenements">
+  <!-- EVENEMENTS -->
 
+  <section id="evenements">
     <div class="container">
 
       <div class="eyebrow">Vos événements</div>
@@ -862,8 +807,7 @@
 
         <p>
           Fête La Fête Event intervient pour différents types d'événements,
-          avec une prestation adaptée au lieu, au public et au déroulement
-          de votre réception.
+          avec une prestation adaptée au lieu, au public et au déroulement de votre réception.
         </p>
 
         <p>
@@ -875,13 +819,12 @@
       </div>
 
     </div>
-
   </section>
 
 
   <!-- ZONES -->
-  <section id="zones">
 
+  <section id="zones">
     <div class="container">
 
       <div class="eyebrow">Zone d'intervention</div>
@@ -889,8 +832,9 @@
       <h2>DJ mariage et photographe en Isère et Auvergne-Rhône-Alpes</h2>
 
       <p class="intro">
-        Basé à <strong>Saint-Hilaire-de-la-Côte</strong>, Fête La Fête Event
-        se déplace directement sur le lieu de votre mariage ou de votre événement.
+        Basé à <strong>Saint-Hilaire-de-la-Côte</strong>,
+        Fête La Fête Event se déplace directement sur le lieu
+        de votre mariage ou de votre événement.
       </p>
 
       <p class="intro">
@@ -900,7 +844,6 @@
 
 
       <div class="zones">
-
         <div>Isère</div>
         <div>Saint-Hilaire-de-la-Côte</div>
         <div>Bourgoin-Jallieu</div>
@@ -913,29 +856,26 @@
         <div>Valence</div>
         <div>Saint-Étienne</div>
         <div>Auvergne-Rhône-Alpes</div>
-
       </div>
 
 
       <div class="seo-text">
 
         <p>
-          Que votre réception se déroule près de Bourgoin-Jallieu, Grenoble,
-          Voiron, Vienne ou dans une autre commune de la région,
-          vous pouvez nous présenter votre projet afin de vérifier
-          les possibilités d'intervention.
+          Que votre réception se déroule près de Bourgoin-Jallieu,
+          Grenoble, Voiron, Vienne ou dans une autre commune de la région,
+          vous pouvez nous présenter votre projet afin de vérifier les possibilités d'intervention.
         </p>
 
       </div>
 
     </div>
-
   </section>
 
 
   <!-- DEVIS -->
-  <section id="devis">
 
+  <section id="devis">
     <div class="container">
 
       <div class="eyebrow">Votre projet</div>
@@ -961,7 +901,10 @@
 
           <p>
             <strong>Téléphone</strong><br>
-            <a class="contact-link" href="tel:+33611813395">
+            <a
+              class="contact-link"
+              href="tel:+33611813395"
+            >
               06 11 81 33 95
             </a>
           </p>
@@ -980,6 +923,7 @@
             Déplacement dans l'Isère et en Auvergne-Rhône-Alpes.
           </p>
 
+
           <div class="cta-box">
 
             <p>
@@ -987,7 +931,10 @@
               Présentez-nous votre projet.
             </p>
 
-            <a class="cta" href="#formulaire">
+            <a
+              class="cta"
+              href="#formulaire"
+            >
               Demander un devis
             </a>
 
@@ -1032,30 +979,47 @@
               placeholder="Date de l'événement"
             >
 
-            <select name="prestation" required>
+            <select
+              name="prestation"
+              required
+            >
 
               <option value="">
                 Prestation souhaitée
               </option>
 
-              <option>DJ mariage</option>
+              <option>
+                DJ mariage
+              </option>
 
-              <option>Photographe mariage</option>
+              <option>
+                Photographe mariage
+              </option>
 
-              <option>DJ + Photographe mariage</option>
+              <option>
+                DJ + Photographe mariage
+              </option>
 
-              <option>DJ + Borne à selfie</option>
+              <option>
+                DJ + Borne à selfie
+              </option>
 
-              <option>DJ + Photographe + Borne à selfie</option>
+              <option>
+                DJ + Photographe + Borne à selfie
+              </option>
 
-              <option>Autre demande</option>
+              <option>
+                Autre demande
+              </option>
 
             </select>
+
 
             <textarea
               name="message"
               placeholder="Parlez-nous de votre événement : lieu, nombre d'invités, horaires, besoins..."
             ></textarea>
+
 
             <button type="submit">
               Demander un devis
@@ -1068,7 +1032,6 @@
       </div>
 
     </div>
-
   </section>
 
 </main>
