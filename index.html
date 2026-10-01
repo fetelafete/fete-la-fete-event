@@ -24,29 +24,21 @@
 
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Mise en page des photos -->
   <style>
     .photo-section {
       margin-top: 45px;
     }
 
-    /* Première grande photo : image entière, sans couper les mariés */
+    /* Grande photo principale : aucune découpe */
     .photo-large {
       width: 100%;
       height: auto;
-      max-height: 600px;
-      object-fit: contain;
       display: block;
       margin: 0 auto;
       border-radius: 8px;
       border: 1px solid rgba(212, 175, 55, 0.30);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.40);
       background: #080808;
-    }
-
-    .photo-large-small {
-      height: 400px;
-      object-fit: cover;
     }
 
     .photo-grid {
@@ -125,6 +117,7 @@
     }
 
     @media (max-width: 850px) {
+
       .photo-grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -143,13 +136,8 @@
     @media (max-width: 650px) {
 
       .photo-large {
+        width: 100%;
         height: auto;
-        max-height: none;
-        object-fit: contain;
-      }
-
-      .photo-large-small {
-        height: 280px;
       }
 
       .photo-grid {
@@ -166,7 +154,6 @@
     }
   </style>
 
-  <!-- Données structurées -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -220,6 +207,7 @@
     }
   }
   </script>
+
 </head>
 
 <body>
@@ -227,24 +215,42 @@
   <!-- HEADER -->
 
   <header class="site-header">
+
     <div class="container header-inner">
 
       <a href="/" class="logo-link">
+
         <img
           src="logo-fete-la-fete-event.png"
           alt="Fête La Fête Event"
           class="logo">
+
       </a>
 
       <nav>
+
         <a href="#prestations">Prestations</a>
-        <a href="dj-mariage-isere.html">DJ mariage</a>
-        <a href="photographe-mariage.html">Photographe</a>
-        <a href="#zones">Zones</a>
-        <a href="#devis" class="cta">Demander un devis</a>
+
+        <a href="dj-mariage-isere.html">
+          DJ mariage
+        </a>
+
+        <a href="photographe-mariage.html">
+          Photographe
+        </a>
+
+        <a href="#zones">
+          Zones
+        </a>
+
+        <a href="#devis" class="cta">
+          Demander un devis
+        </a>
+
       </nav>
 
     </div>
+
   </header>
 
 
@@ -282,7 +288,7 @@
   </section>
 
 
-  <!-- GRANDE PHOTO MARIAGE -->
+  <!-- PHOTO DJ PRINCIPALE -->
 
   <section class="section">
 
@@ -292,8 +298,9 @@
 
         <img
           class="photo-large"
-          src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85"
-          alt="Mariage élégant avec mariés et réception">
+          src="https://images.unsplash.com/photo-1633994093711-6ca52e5472d8?auto=format&fit=max&w=1800&q=85"
+          alt="DJ derrière ses platines avec éclairages et ambiance de soirée"
+          loading="eager">
 
       </div>
 
@@ -309,7 +316,7 @@
     <div class="container">
 
       <h2>
-        Votre mariage mérite une ambiance à la hauteur de votre journée
+        Votre événement mérite une ambiance à la hauteur de votre soirée
       </h2>
 
       <p>
@@ -418,7 +425,8 @@
 
           <img
             src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85"
-            alt="DJ et ambiance lumineuse pendant une soirée">
+            alt="DJ et ambiance lumineuse pendant une soirée"
+            loading="lazy">
 
         </div>
 
@@ -469,7 +477,8 @@
 
           <img
             src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1400&q=85"
-            alt="Mariés photographiés pendant leur mariage">
+            alt="Mariés photographiés pendant leur mariage"
+            loading="lazy">
 
         </div>
 
@@ -538,7 +547,8 @@
         <img
           class="photo-large"
           src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1800&q=85"
-          alt="Couple de mariés pendant leur réception">
+          alt="Couple de mariés pendant leur réception"
+          loading="lazy">
 
       </div>
 
@@ -578,7 +588,8 @@
 
           <img
             src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=1200&q=85"
-            alt="Réception de mariage élégante">
+            alt="Réception de mariage élégante"
+            loading="lazy">
 
           <div class="photo-card-content">
 
@@ -600,7 +611,8 @@
 
           <img
             src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=85"
-            alt="Soirée festive avec invités">
+            alt="Soirée festive avec invités"
+            loading="lazy">
 
           <div class="photo-card-content">
 
@@ -621,7 +633,8 @@
 
           <img
             src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?auto=format&fit=crop&w=1200&q=85"
-            alt="Ambiance festive et piste de danse">
+            alt="Ambiance festive et piste de danse"
+            loading="lazy">
 
           <div class="photo-card-content">
 
@@ -657,7 +670,8 @@
 
           <img
             src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=85"
-            alt="Invités profitant d'une réception festive">
+            alt="Invités profitant d'une réception festive"
+            loading="lazy">
 
         </div>
 
