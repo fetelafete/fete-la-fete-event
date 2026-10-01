@@ -60,6 +60,10 @@ img{
   margin:auto;
 }
 
+/* =========================
+   HEADER
+========================= */
+
 header{
   position:sticky;
   top:0;
@@ -70,7 +74,7 @@ header{
 }
 
 .nav{
-  min-height:135px;
+  min-height:180px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -84,9 +88,10 @@ header{
 }
 
 .logo img{
-  width:135px;
-  height:135px;
-  max-width:none;
+  width:180px !important;
+  height:180px !important;
+  max-width:none !important;
+  max-height:none !important;
   object-fit:contain;
   display:block;
 }
@@ -106,6 +111,10 @@ nav a{
 nav a:hover{
   color:var(--gold2);
 }
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
   position:relative;
@@ -223,6 +232,10 @@ nav a:hover{
   letter-spacing:.5px;
 }
 
+/* =========================
+   BOUTONS
+========================= */
+
 .btn{
   display:inline-block;
   padding:13px 23px;
@@ -236,6 +249,10 @@ nav a:hover{
   color:#090909;
   border:0;
 }
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
   padding:70px 0;
@@ -268,6 +285,10 @@ h2{
   font-size:17px;
 }
 
+/* =========================
+   CARTES
+========================= */
+
 .cards{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -299,6 +320,10 @@ h2{
   font-size:14px;
 }
 
+/* =========================
+   ZONES
+========================= */
+
 .zones{
   columns:3;
   column-gap:40px;
@@ -310,6 +335,10 @@ h2{
   break-inside:avoid;
   padding:5px 0;
 }
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact-grid{
   display:grid;
@@ -367,6 +396,10 @@ button{
   font-weight:800;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
 footer{
   padding:35px 0;
   color:#999;
@@ -377,6 +410,10 @@ footer{
 footer strong{
   color:var(--gold2);
 }
+
+/* =========================
+   TABLETTE
+========================= */
 
 @media(max-width:850px){
 
@@ -394,6 +431,10 @@ footer strong{
 
 }
 
+/* =========================
+   MOBILE
+========================= */
+
 @media(max-width:560px){
 
   .nav{
@@ -404,9 +445,10 @@ footer strong{
   }
 
   .logo img{
-    width:105px;
-    height:105px;
-    max-width:none;
+    width:120px !important;
+    height:120px !important;
+    max-width:none !important;
+    max-height:none !important;
   }
 
   nav{
@@ -483,8 +525,8 @@ footer strong{
       <img
         src="logo-fete-la-fete-event.png"
         alt="Fête La Fête Event"
-        width="135"
-        height="135"
+        width="180"
+        height="180"
       >
 
     </a>
@@ -693,7 +735,6 @@ footer strong{
 
           <p>
             <strong>Téléphone</strong><br>
-
             <a class="contact-link" href="tel:+33611813395">
               06 11 81 33 95
             </a>
@@ -701,7 +742,6 @@ footer strong{
 
           <p>
             <strong>E-mail</strong><br>
-
             <a class="contact-link" href="mailto:fetelafete.djsim@gmail.com">
               fetelafete.djsim@gmail.com
             </a>
