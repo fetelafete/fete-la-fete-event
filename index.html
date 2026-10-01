@@ -30,18 +30,23 @@
       margin-top: 45px;
     }
 
+    /* Première grande photo : image entière, sans couper les mariés */
     .photo-large {
       width: 100%;
-      height: 480px;
-      object-fit: cover;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;
       display: block;
+      margin: 0 auto;
       border-radius: 8px;
       border: 1px solid rgba(212, 175, 55, 0.30);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.40);
+      background: #080808;
     }
 
     .photo-large-small {
       height: 400px;
+      object-fit: cover;
     }
 
     .photo-grid {
@@ -136,8 +141,11 @@
     }
 
     @media (max-width: 650px) {
+
       .photo-large {
-        height: 300px;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
       }
 
       .photo-large-small {
@@ -216,9 +224,7 @@
 
 <body>
 
-  <!-- ============================= -->
   <!-- HEADER -->
-  <!-- ============================= -->
 
   <header class="site-header">
     <div class="container header-inner">
@@ -242,9 +248,7 @@
   </header>
 
 
-  <!-- ============================= -->
   <!-- HERO -->
-  <!-- ============================= -->
 
   <section class="hero home-hero">
 
@@ -278,9 +282,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- GRANDE PHOTO MARIAGE -->
-  <!-- ============================= -->
 
   <section class="section">
 
@@ -300,9 +302,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- INTRODUCTION -->
-  <!-- ============================= -->
 
   <section class="section section-alt">
 
@@ -328,9 +328,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- PRESTATIONS -->
-  <!-- ============================= -->
 
   <section class="section" id="prestations">
 
@@ -408,9 +406,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- DJ MARIAGE -->
-  <!-- ============================= -->
 
   <section class="section section-alt">
 
@@ -461,9 +457,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- PHOTOGRAPHE -->
-  <!-- ============================= -->
 
   <section class="section">
 
@@ -514,9 +508,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- DJ + PHOTOGRAPHE -->
-  <!-- ============================= -->
 
   <section class="section section-alt">
 
@@ -562,9 +554,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- ÉVÉNEMENTS -->
-  <!-- ============================= -->
 
   <section class="section">
 
@@ -583,8 +573,6 @@
 
       <div class="photo-grid">
 
-
-        <!-- MARIAGE -->
 
         <article class="photo-card">
 
@@ -608,8 +596,6 @@
         </article>
 
 
-        <!-- SOIRÉE -->
-
         <article class="photo-card">
 
           <img
@@ -630,8 +616,6 @@
 
         </article>
 
-
-        <!-- ÉVÉNEMENT -->
 
         <article class="photo-card">
 
@@ -661,9 +645,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- BORNE À SELFIE -->
-  <!-- ============================= -->
 
   <section class="section section-alt">
 
@@ -713,9 +695,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- ZONES -->
-  <!-- ============================= -->
 
   <section class="section" id="zones">
 
@@ -741,9 +721,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- DEVIS -->
-  <!-- ============================= -->
 
   <section class="section section-alt" id="devis">
 
@@ -889,9 +867,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- CTA FINAL -->
-  <!-- ============================= -->
 
   <section class="section">
 
@@ -916,9 +892,7 @@
   </section>
 
 
-  <!-- ============================= -->
   <!-- FOOTER -->
-  <!-- ============================= -->
 
   <footer class="site-footer">
 
