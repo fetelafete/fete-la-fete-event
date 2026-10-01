@@ -1,13 +1,25 @@
 /* =========================================================
    FÊTE LA FÊTE EVENT
-   DESIGN PRINCIPAL — NOIR & OR
-   Compatible avec dj-mariage-isere.html
+   STYLES COMPLETS DU SITE
+   ========================================================= */
+
+:root {
+  --bg: #080808;
+  --bg-alt: #111111;
+  --card: #151515;
+  --gold: #d4af37;
+  --gold-light: #f1d675;
+  --text: #f5f5f5;
+  --muted: #b8b8b8;
+  --border: rgba(212, 175, 55, 0.30);
+}
+
+/* =========================================================
+   RESET
    ========================================================= */
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -15,43 +27,33 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  background: #080808;
-  color: #f2f2f2;
   line-height: 1.7;
-  overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 a {
-  color: inherit;
+  color: var(--gold-light);
   text-decoration: none;
 }
 
-:root {
-  --black: #080808;
-  --black-2: #101010;
-  --black-3: #151515;
-  --gold: #d4af37;
-  --gold-light: #f0d878;
-  --gold-dark: #9f7d18;
-  --white: #ffffff;
-  --text: #eeeeee;
-  --muted: #b9b9b9;
-  --border: rgba(212, 175, 55, 0.35);
+a:hover {
+  color: #ffffff;
 }
 
 /* =========================================================
-   CONTAINER
+   CONTENEUR
    ========================================================= */
 
 .container {
-  width: min(1180px, calc(100% - 40px));
+  width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
 }
 
@@ -60,129 +62,48 @@ a {
    ========================================================= */
 
 .site-header {
-  background: rgba(5, 5, 5, 0.98);
+  position: relative;
+  z-index: 10;
+  background: #050505;
   border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
 }
 
-.site-header .container {
-  min-height: 110px;
+.header-inner {
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
 }
 
-/* Logo du haut */
-
 .logo-link {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .logo {
   width: 110px;
   height: 110px;
   object-fit: contain;
+  display: block;
 }
 
-/* Navigation */
-
-.site-header nav {
+nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.site-header nav a {
+nav a {
   color: #ffffff;
-  font-size: 0.95rem;
   font-weight: 600;
-  transition: color 0.25s ease;
-  position: relative;
+  transition: 0.2s ease;
 }
 
-.site-header nav a:hover {
+nav a:hover {
   color: var(--gold-light);
-}
-
-.site-header nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -7px;
-  width: 0;
-  height: 2px;
-  background: var(--gold);
-  transition: width 0.25s ease;
-}
-
-.site-header nav a:hover::after {
-  width: 100%;
-}
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero {
-  min-height: 620px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.72),
-      rgba(0, 0, 0, 0.86)
-    ),
-    url("visuel-fete-la-fete-site.png")
-    center center / cover no-repeat;
-
-  border-bottom: 1px solid var(--border);
-}
-
-.hero .container {
-  padding: 80px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Petit titre au-dessus */
-
-.eyebrow {
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.82rem;
-  font-weight: 800;
-  margin-bottom: 14px;
-}
-
-/* Grand titre */
-
-.hero h1 {
-  color: var(--gold-light);
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
-  line-height: 1.1;
-  font-weight: 800;
-  margin-bottom: 25px;
-  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
-}
-
-/* Texte hero */
-
-.hero-text {
-  max-width: 850px;
-  color: #f2f2f2;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  margin-bottom: 35px;
 }
 
 /* =========================================================
@@ -190,47 +111,118 @@ a {
    ========================================================= */
 
 .cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 52px;
-  padding: 13px 30px;
-
-  background: linear-gradient(
-    135deg,
-    var(--gold-light),
-    var(--gold),
-    var(--gold-dark)
-  );
-
+  display: inline-block;
+  padding: 13px 24px;
+  background: var(--gold);
   color: #080808 !important;
-
-  border: 1px solid var(--gold-light);
-  border-radius: 8px;
-
-  font-weight: 800;
-  font-size: 1rem;
-
-  cursor: pointer;
-
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.45),
-    0 5px 20px rgba(212, 175, 55, 0.12);
-
-  transition:
-    transform 0.2s ease,
-    filter 0.2s ease,
-    box-shadow 0.2s ease;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
 
 .cta:hover {
-  transform: translateY(-3px);
-  filter: brightness(1.08);
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  color: #080808 !important;
+  transform: translateY(-1px);
+}
 
-  box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.55),
-    0 8px 25px rgba(212, 175, 55, 0.22);
+/* =========================================================
+   HERO ACCUEIL
+   IMPORTANT :
+   AUCUNE IMAGE DE FOND
+   ========================================================= */
+
+.hero,
+.home-hero {
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  background: #080808 !important;
+  background-image: none !important;
+
+  border-bottom: 1px solid var(--border);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+   Sécurité supplémentaire :
+   aucun pseudo-élément ne doit pouvoir remettre
+   l'ancien visuel en arrière-plan.
+*/
+
+.home-hero::before,
+.home-hero::after,
+.hero::before,
+.hero::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* =========================================================
+   LOGO CENTRAL DU HERO
+   ========================================================= */
+
+.hero-logo {
+  width: 300px !important;
+  height: 300px !important;
+
+  object-fit: contain;
+
+  display: block;
+
+  margin: 0 auto 25px;
+
+  filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.75));
+}
+
+/* =========================================================
+   TEXTE HERO
+   ========================================================= */
+
+.eyebrow {
+  margin: 0 0 10px;
+
+  color: var(--gold-light);
+
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 900px;
+
+  margin: 0 auto 20px;
+
+  color: #ffffff;
+
+  font-size: clamp(2rem, 5vw, 4rem);
+
+  line-height: 1.1;
+}
+
+.hero-text {
+  max-width: 780px;
+
+  margin: 0 auto 30px;
+
+  color: var(--muted);
+
+  font-size: 1.15rem;
 }
 
 /* =========================================================
@@ -238,27 +230,32 @@ a {
    ========================================================= */
 
 .section {
-  padding: 85px 0;
-  background: var(--black);
+  padding: 90px 0;
+
+  background: var(--bg);
 }
 
 .section-alt {
-  background: #111111;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: var(--bg-alt);
+
+  border-top: 1px solid rgba(212, 175, 55, 0.10);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.10);
 }
 
 .section h2 {
-  color: var(--gold-light);
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  max-width: 900px;
+
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+
   line-height: 1.2;
-  margin-bottom: 25px;
 }
 
-.section > .container > p:not(.eyebrow) {
-  color: var(--text);
-  max-width: 1000px;
-  margin-bottom: 20px;
+.section > .container > p {
+  max-width: 900px;
 }
 
 /* =========================================================
@@ -267,66 +264,48 @@ a {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
   gap: 25px;
 
   margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .card {
-  background:
-    linear-gradient(
-      145deg,
-      #191919,
-      #0e0e0e
-    );
-
-  border: 1px solid var(--border);
-  border-radius: 14px;
-
   padding: 30px;
 
-  box-shadow:
-    0 12px 35px rgba(0, 0, 0, 0.40);
+  background: var(--card);
 
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
+  border: 1px solid var(--border);
 
-.card:hover {
-  transform: translateY(-5px);
+  border-radius: 8px;
 
-  border-color: rgba(212, 175, 55, 0.75);
-
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.55),
-    0 8px 25px rgba(212, 175, 55, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
 }
 
 .card h3 {
+  margin-top: 0;
+
+  margin-bottom: 15px;
+
   color: var(--gold-light);
+
   font-size: 1.35rem;
-  margin-bottom: 13px;
 }
 
 .card p {
-  color: #d5d5d5;
-  margin-bottom: 0;
+  color: var(--muted);
 }
 
-/* =========================================================
-   LIENS DANS LE CONTENU
-   ========================================================= */
+.card ul {
+  padding-left: 20px;
 
-main a:not(.cta) {
-  color: var(--gold-light);
+  color: var(--muted);
 }
 
-main a:not(.cta):hover {
-  color: #ffffff;
+.card .cta {
+  margin-top: 15px;
 }
 
 /* =========================================================
@@ -334,77 +313,55 @@ main a:not(.cta):hover {
    ========================================================= */
 
 form {
+  max-width: 800px;
+
   margin-top: 35px;
-  max-width: 850px;
-
-  background: #121212;
-
-  border: 1px solid var(--border);
-  border-radius: 14px;
-
-  padding: 35px;
-
-  box-shadow:
-    0 15px 40px rgba(0, 0, 0, 0.45);
 }
 
 .form-group {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
-label {
+.form-group label {
   display: block;
-  color: var(--gold-light);
-  font-weight: 700;
+
   margin-bottom: 8px;
+
+  color: #ffffff;
+
+  font-weight: 700;
 }
 
 input,
-textarea,
-select {
+select,
+textarea {
   width: 100%;
 
-  background: #080808;
+  padding: 14px 15px;
+
+  background: #0d0d0d;
+
   color: #ffffff;
 
-  border: 1px solid #3b3b3b;
-  border-radius: 7px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
 
-  padding: 13px 15px;
+  border-radius: 4px;
+
+  font: inherit;
 
   outline: none;
-
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-input {
-  min-height: 48px;
-}
-
-textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #777777;
 }
 
 input:focus,
-textarea:focus,
-select:focus {
+select:focus,
+textarea:focus {
   border-color: var(--gold);
-  box-shadow:
-    0 0 0 3px rgba(212, 175, 55, 0.10);
+
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.10);
 }
 
-form .cta {
-  width: 100%;
-  border: none;
-  margin-top: 5px;
+textarea {
+  resize: vertical;
 }
 
 /* =========================================================
@@ -412,116 +369,61 @@ form .cta {
    ========================================================= */
 
 .site-footer {
+  padding: 50px 0;
+
   background: #050505;
+
   border-top: 1px solid var(--border);
 
-  padding: 50px 0 30px;
-
   text-align: center;
+
+  color: var(--muted);
 }
 
 .site-footer p {
-  color: #a9a9a9;
-  margin-bottom: 12px;
+  margin: 8px 0;
 }
 
 .site-footer strong {
-  color: var(--gold);
-  font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .site-footer a {
-  color: #dddddd;
-  transition: color 0.2s ease;
-}
-
-.site-footer a:hover {
   color: var(--gold-light);
 }
 
 /* =========================================================
-   TEXTE IMPORTANT
+   RESPONSIVE TABLETTE
    ========================================================= */
 
-strong {
-  color: #ffffff;
-}
+@media (max-width: 850px) {
 
-/* =========================================================
-   ACCESSIBILITÉ
-   ========================================================= */
+  .header-inner {
+    flex-direction: column;
 
-:focus-visible {
-  outline: 2px solid var(--gold-light);
-  outline-offset: 3px;
-}
+    justify-content: center;
 
-/* =========================================================
-   TABLETTE
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-  .container {
-    width: min(100% - 30px, 760px);
+    padding: 15px 0 20px;
   }
 
-  .site-header .container {
-    min-height: 95px;
-  }
-
-  .logo {
-    width: 90px;
-    height: 90px;
-  }
-
-  .site-header nav {
-    gap: 16px;
-  }
-
-  .site-header nav a {
-    font-size: 0.88rem;
-  }
-
-  .hero {
-    min-height: 570px;
-  }
-
-  .hero .container {
-    padding: 65px 0;
+  nav {
+    justify-content: center;
   }
 
   .cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
 }
 
 /* =========================================================
-   MOBILE
+   RESPONSIVE MOBILE
    ========================================================= */
 
 @media (max-width: 650px) {
 
-  body {
-    font-size: 15px;
-  }
-
   .container {
-    width: calc(100% - 28px);
-  }
-
-  /* Header */
-
-  .site-header {
-    position: relative;
-  }
-
-  .site-header .container {
-    min-height: auto;
-    padding: 12px 0 15px;
-
-    flex-direction: column;
-    gap: 10px;
+    width: min(100% - 28px, 1120px);
   }
 
   .logo {
@@ -529,126 +431,82 @@ strong {
     height: 90px;
   }
 
-  .site-header nav {
+  nav {
+    gap: 12px;
+
+    font-size: 0.9rem;
+  }
+
+  nav .cta {
     width: 100%;
 
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 8px 15px;
+    text-align: center;
   }
 
-  .site-header nav a {
-    font-size: 0.82rem;
-  }
-
-  .site-header nav a::after {
-    display: none;
-  }
-
-  /* Hero */
-
-  .hero {
+  .hero,
+  .home-hero {
     min-height: 560px;
+
+    background: #080808 !important;
+    background-image: none !important;
   }
 
-  .hero .container {
-    padding: 60px 0;
+  .hero-logo {
+    width: 220px !important;
+    height: 220px !important;
+
+    margin-bottom: 20px;
   }
 
   .hero h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .hero-text {
     font-size: 1rem;
   }
 
-  /* Sections */
-
   .section {
-    padding: 60px 0;
+    padding: 65px 0;
   }
 
   .section h2 {
-    font-size: 1.85rem;
+    font-size: 1.9rem;
   }
-
-  /* Cards */
 
   .cards {
     grid-template-columns: 1fr;
+
     gap: 18px;
-    margin-top: 30px;
   }
 
   .card {
     padding: 24px;
   }
 
-  /* Formulaire */
-
-  form {
-    padding: 22px;
-  }
-
-  .cta {
-    width: 100%;
-  }
-
-  /* Footer */
-
-  .site-footer {
-    padding: 40px 0 25px;
-  }
-
 }
 
 /* =========================================================
-   PETITS TÉLÉPHONES
+   SÉCURITÉ ABSOLUE CONTRE L'ANCIEN BANDEAU
    ========================================================= */
 
-@media (max-width: 400px) {
+/*
+   Même si une ancienne règle était présente ailleurs,
+   le hero de l'accueil doit rester NOIR.
+*/
 
-  .hero h1 {
-    font-size: 1.9rem;
-  }
-
-  .hero-text {
-    font-size: 0.95rem;
-  }
-
-  .site-header nav a {
-    font-size: 0.76rem;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
+body .home-hero {
+  background: #080808 !important;
+  background-image: none !important;
 }
 
-/* =========================================================
-   ANIMATION LÉGÈRE
-   ========================================================= */
+body .home-hero[style] {
+  background-image: none !important;
+}
 
-@media (prefers-reduced-motion: no-preference) {
-
-  .hero .container {
-    animation: apparition 0.7s ease both;
-  }
-
-  @keyframes apparition {
-    from {
-      opacity: 0;
-      transform: translateY(18px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
+body .home-hero::before,
+body .home-hero::after {
+  background-image: none !important;
+  background: none !important;
+  content: none !important;
 }
