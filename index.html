@@ -115,15 +115,104 @@ nav a:hover{
 }
 
 .hero{
-  padding:24px 0 0;
+  position:relative;
+  overflow:hidden;
+  margin-top:24px;
+  padding:72px 28px 78px;
+  border:1px solid var(--line);
+  border-radius:28px;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 18%,rgba(245,210,122,.18),transparent 28%),
+    radial-gradient(circle at 15% 85%,rgba(217,164,65,.10),transparent 30%),
+    linear-gradient(145deg,#111113 0%,#050505 52%,#0c0c0e 100%);
+  box-shadow:0 25px 90px rgba(0,0,0,.58);
 }
 
-.hero img{
-  width:100%;
-  height:auto;
-  border:1px solid var(--line);
-  border-radius:18px;
-  box-shadow:0 20px 70px rgba(0,0,0,.65);
+.hero::before,
+.hero::after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(245,210,122,.18);
+  border-radius:50%;
+  pointer-events:none;
+}
+
+.hero::before{
+  width:420px;
+  height:420px;
+  top:-250px;
+  left:-180px;
+}
+
+.hero::after{
+  width:360px;
+  height:360px;
+  right:-170px;
+  bottom:-240px;
+}
+
+.hero-content{
+  position:relative;
+  z-index:1;
+  max-width:900px;
+  margin:auto;
+}
+
+.hero-logo{
+  width:190px;
+  height:190px;
+  object-fit:contain;
+  margin:0 auto 28px;
+  filter:drop-shadow(0 12px 30px rgba(245,210,122,.18));
+}
+
+.hero-kicker{
+  margin-bottom:10px;
+  color:var(--gold2);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin:0;
+  color:#fff;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(34px,5vw,62px);
+  line-height:1.08;
+}
+
+.hero h1 span{
+  display:block;
+  margin-top:8px;
+  color:var(--gold2);
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+}
+
+.hero-subtitle{
+  max-width:720px;
+  margin:22px auto 0;
+  color:#d8d4ca;
+  font-size:clamp(16px,2vw,20px);
+}
+
+.hero-services{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px 22px;
+  margin:28px auto 0;
+  color:#fff;
+  font-size:14px;
+}
+
+.hero-services span::before{
+  content:"✦";
+  margin-right:8px;
+  color:var(--gold2);
 }
 
 .hero-actions{
@@ -131,7 +220,36 @@ nav a:hover{
   justify-content:center;
   gap:14px;
   flex-wrap:wrap;
-  margin:22px 0 42px;
+  margin:34px 0 0;
+}
+
+.hero-note{
+  margin:25px 0 0;
+  color:#aaa59b;
+  font-size:13px;
+  letter-spacing:.5px;
+}
+
+@media(max-width:560px){
+
+  .hero{
+    margin-top:12px;
+    padding:48px 18px 52px;
+    border-radius:22px;
+  }
+
+  .hero-logo{
+    width:145px;
+    height:145px;
+    margin-bottom:22px;
+  }
+
+  .hero-services{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    font-size:13px;
+  }
 }
 
 .btn{
@@ -375,7 +493,7 @@ footer strong{
 
     <nav>
       <a href="#prestations">Prestations</a>
-      <a href="#photo">DJ + Photographe</a>
+      <a href="#prestations">DJ + Photographe</a>
       <a href="#zones">Zones</a>
       <a href="#devis">Votre devis</a>
     </nav>
@@ -388,21 +506,53 @@ footer strong{
 
   <div class="container hero">
 
-    <img
-      src="visuel-fete-la-fete-site.png"
-      alt="Fête La Fête Event - DJ et événementiel en Isère"
-      loading="eager"
-    >
+    <div class="hero-content">
 
-    <div class="hero-actions">
+      <img
+        class="hero-logo"
+        src="logo-fete-la-fete-event.png"
+        alt="Fête La Fête Event"
+        width="190"
+        height="190"
+        loading="eager"
+      >
 
-      <a class="btn" href="#prestations">
-        Découvrir nos prestations
-      </a>
+      <div class="hero-kicker">
+        DJ mariage & événementiel
+      </div>
 
-      <a class="btn gold" href="#devis">
-        Demander un devis
-      </a>
+      <h1>
+        Fête La Fête Event
+        <span>Vos plus beaux moments, notre passion.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        DJ, sonorisation, éclairage et photographie pour vos mariages,
+        anniversaires et événements privés ou professionnels.
+      </p>
+
+      <div class="hero-services">
+        <span>DJ</span>
+        <span>Sonorisation</span>
+        <span>Éclairage</span>
+        <span>Photographie</span>
+      </div>
+
+      <div class="hero-actions">
+
+        <a class="btn gold" href="#devis">
+          Demander un devis
+        </a>
+
+        <a class="btn" href="#prestations">
+          Découvrir nos prestations
+        </a>
+
+      </div>
+
+      <p class="hero-note">
+        Basé en Isère · Déplacement en Auvergne-Rhône-Alpes
+      </p>
 
     </div>
 
