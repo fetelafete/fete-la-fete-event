@@ -71,7 +71,7 @@ header{
 }
 
 .nav{
-  min-height:96px;
+  min-height:120px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -85,17 +85,11 @@ header{
 }
 
 .logo img{
-  width:110px;
-  height:110px;
+  width:125px;
+  height:125px;
+  max-width:none;
   object-fit:contain;
   display:block;
-}
-
-@media(max-width:560px){
-  .logo img{
-    width:90px;
-    height:90px;
-  }
 }
 
 nav{
@@ -228,28 +222,6 @@ nav a:hover{
   color:#aaa59b;
   font-size:13px;
   letter-spacing:.5px;
-}
-
-@media(max-width:560px){
-
-  .hero{
-    margin-top:12px;
-    padding:48px 18px 52px;
-    border-radius:22px;
-  }
-
-  .hero-logo{
-    width:145px;
-    height:145px;
-    margin-bottom:22px;
-  }
-
-  .hero-services{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:10px;
-    font-size:13px;
-  }
 }
 
 .btn{
@@ -425,9 +397,16 @@ footer strong{
 @media(max-width:560px){
 
   .nav{
+    min-height:0;
     align-items:flex-start;
     padding:14px 0;
     flex-direction:column;
+  }
+
+  .logo img{
+    width:100px;
+    height:100px;
+    max-width:none;
   }
 
   nav{
@@ -436,7 +415,23 @@ footer strong{
   }
 
   .hero{
+    margin-top:12px;
+    padding:48px 18px 52px;
+    border-radius:22px;
     padding-top:12px;
+  }
+
+  .hero-logo{
+    width:145px;
+    height:145px;
+    margin-bottom:22px;
+  }
+
+  .hero-services{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    font-size:13px;
   }
 
   .cards{
@@ -486,8 +481,8 @@ footer strong{
       <img
         src="logo-fete-la-fete-event.png"
         alt="Fête La Fête Event"
-        width="110"
-        height="110"
+        width="125"
+        height="125"
       >
     </a>
 
