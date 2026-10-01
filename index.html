@@ -25,11 +25,16 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+
     .photo-section {
       margin-top: 45px;
     }
 
-    /* Grande photo principale : aucune découpe */
+    /*
+      GRANDE PHOTO PRINCIPALE
+      Image affichée entièrement sans découpage
+    */
+
     .photo-large {
       width: 100%;
       height: auto;
@@ -40,6 +45,10 @@
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.40);
       background: #080808;
     }
+
+    /*
+      GRILLE PHOTOS
+    */
 
     .photo-grid {
       display: grid;
@@ -82,6 +91,10 @@
       color: #b8b8b8;
     }
 
+    /*
+      BLOCS PHOTO + TEXTE
+    */
+
     .photo-text {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -116,6 +129,10 @@
       margin-top: 0;
     }
 
+    /*
+      TABLETTE
+    */
+
     @media (max-width: 850px) {
 
       .photo-grid {
@@ -131,7 +148,12 @@
       .photo-text.reverse .photo-text-content {
         order: initial;
       }
+
     }
+
+    /*
+      MOBILE
+    */
 
     @media (max-width: 650px) {
 
@@ -151,8 +173,13 @@
       .photo-text-image img {
         height: 280px;
       }
+
     }
+
   </style>
+
+
+  <!-- DONNÉES STRUCTURÉES -->
 
   <script type="application/ld+json">
   {
@@ -210,9 +237,13 @@
 
 </head>
 
+
 <body>
 
+
+  <!-- ===================================== -->
   <!-- HEADER -->
+  <!-- ===================================== -->
 
   <header class="site-header">
 
@@ -227,9 +258,12 @@
 
       </a>
 
+
       <nav>
 
-        <a href="#prestations">Prestations</a>
+        <a href="#prestations">
+          Prestations
+        </a>
 
         <a href="dj-mariage-isere.html">
           DJ mariage
@@ -254,7 +288,10 @@
   </header>
 
 
+
+  <!-- ===================================== -->
   <!-- HERO -->
+  <!-- ===================================== -->
 
   <section class="hero home-hero">
 
@@ -265,19 +302,23 @@
         alt="Fête La Fête Event - DJ mariage et photographe mariage"
         class="hero-logo">
 
+
       <p class="eyebrow">
         DJ mariage & photographe mariage
       </p>
 
+
       <h1>
         DJ mariage & photographe mariage en Isère
       </h1>
+
 
       <p class="hero-text">
         Fête La Fête Event vous accompagne pour vos mariages,
         soirées privées et événements avec une prestation DJ,
         sonorisation, éclairage et photographie professionnelle.
       </p>
+
 
       <a href="#devis" class="cta">
         Demander un devis
@@ -288,7 +329,10 @@
   </section>
 
 
-  <!-- PHOTO DJ PRINCIPALE -->
+
+  <!-- ===================================== -->
+  <!-- GRANDE PHOTO DJ -->
+  <!-- ===================================== -->
 
   <section class="section">
 
@@ -298,8 +342,8 @@
 
         <img
           class="photo-large"
-          src="https://images.unsplash.com/photo-1633994093711-6ca52e5472d8?auto=format&fit=max&w=1800&q=85"
-          alt="DJ derrière ses platines avec éclairages et ambiance de soirée"
+          src="https://images.pexels.com/photos/29416469/pexels-photo-29416469.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          alt="DJ professionnel derrière ses platines avec éclairages de soirée"
           loading="eager">
 
       </div>
@@ -309,20 +353,25 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- INTRODUCTION -->
+  <!-- ===================================== -->
 
   <section class="section section-alt">
 
     <div class="container">
 
       <h2>
-        Votre événement mérite une ambiance à la hauteur de votre soirée
+        Une ambiance musicale et lumineuse pensée pour votre événement
       </h2>
+
 
       <p>
         Fête La Fête Event vous accompagne pour créer une réception
         élégante, festive et personnalisée.
       </p>
+
 
       <p>
         DJ, animation musicale, sonorisation, éclairage et photographie :
@@ -335,7 +384,10 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- PRESTATIONS -->
+  <!-- ===================================== -->
 
   <section class="section" id="prestations">
 
@@ -345,6 +397,7 @@
         Nos prestations
       </h2>
 
+
       <p>
         Découvrez nos différentes prestations pour votre mariage,
         votre soirée privée ou votre événement.
@@ -353,16 +406,21 @@
 
       <div class="cards">
 
+
+        <!-- DJ -->
+
         <article class="card">
 
           <h3>
             DJ mariage
           </h3>
 
+
           <p>
             Animation musicale, sonorisation et éclairage pour
             accompagner votre réception et faire danser vos invités.
           </p>
+
 
           <a href="dj-mariage-isere.html" class="cta">
             Découvrir le DJ mariage
@@ -371,16 +429,21 @@
         </article>
 
 
+
+        <!-- PHOTOGRAPHE -->
+
         <article class="card">
 
           <h3>
             Photographe mariage
           </h3>
 
+
           <p>
             Un reportage photographique pour conserver les émotions,
             les moments forts et les souvenirs de votre mariage.
           </p>
+
 
           <a href="photographe-mariage.html" class="cta">
             Découvrir la photographie
@@ -389,22 +452,28 @@
         </article>
 
 
+
+        <!-- DJ + PHOTO -->
+
         <article class="card">
 
           <h3>
             DJ + Photographe
           </h3>
 
+
           <p>
             Une prestation complète réunissant animation musicale,
             sonorisation, éclairage et photographie.
           </p>
+
 
           <a href="dj-photographe-mariage.html" class="cta">
             Découvrir la prestation
           </a>
 
         </article>
+
 
       </div>
 
@@ -413,13 +482,17 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- DJ MARIAGE -->
+  <!-- ===================================== -->
 
   <section class="section section-alt">
 
     <div class="container">
 
       <div class="photo-text">
+
 
         <div class="photo-text-image">
 
@@ -431,26 +504,31 @@
         </div>
 
 
+
         <div class="photo-text-content">
 
           <p class="eyebrow">
             DJ mariage
           </p>
 
+
           <h2>
             Une ambiance musicale pensée pour votre mariage
           </h2>
+
 
           <p>
             De l'arrivée de vos invités jusqu'à la soirée dansante,
             chaque moment bénéficie d'une ambiance adaptée.
           </p>
 
+
           <p>
             Sonorisation professionnelle, éclairage dynamique,
             micros et animation musicale pour accompagner votre
             réception et faire danser vos invités.
           </p>
+
 
           <a href="dj-mariage-isere.html" class="cta">
             Voir la prestation DJ
@@ -465,13 +543,17 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- PHOTOGRAPHE -->
+  <!-- ===================================== -->
 
   <section class="section">
 
     <div class="container">
 
       <div class="photo-text reverse">
+
 
         <div class="photo-text-image">
 
@@ -483,15 +565,18 @@
         </div>
 
 
+
         <div class="photo-text-content">
 
           <p class="eyebrow">
             Photographe mariage
           </p>
 
+
           <h2>
             Les moments importants méritent de belles images
           </h2>
+
 
           <p>
             Des préparatifs aux moments forts de la réception,
@@ -499,10 +584,12 @@
             les sourires et les instants qui rendent votre journée unique.
           </p>
 
+
           <p>
             Une approche naturelle et élégante pour raconter
             votre mariage à travers vos souvenirs.
           </p>
+
 
           <a href="photographe-mariage.html" class="cta">
             Voir la prestation photo
@@ -517,24 +604,31 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- DJ + PHOTOGRAPHE -->
+  <!-- ===================================== -->
 
   <section class="section section-alt">
 
     <div class="container">
 
+
       <p class="eyebrow">
         Prestation complète
       </p>
+
 
       <h2>
         DJ + Photographe mariage
       </h2>
 
+
       <p>
         Pour les couples qui souhaitent réunir l'animation musicale
         et la photographie au sein d'une même prestation.
       </p>
+
 
       <p>
         Fête La Fête Event vous accompagne avec une solution complète
@@ -555,6 +649,7 @@
 
       <br>
 
+
       <a href="dj-photographe-mariage.html" class="cta">
         Découvrir DJ + Photographe
       </a>
@@ -564,15 +659,20 @@
   </section>
 
 
-  <!-- ÉVÉNEMENTS -->
+
+  <!-- ===================================== -->
+  <!-- EVENEMENTS -->
+  <!-- ===================================== -->
 
   <section class="section">
 
     <div class="container">
 
+
       <h2>
         Mariages, soirées privées et événements
       </h2>
+
 
       <p>
         Mariage, anniversaire, soirée privée ou événement professionnel :
@@ -581,8 +681,11 @@
       </p>
 
 
+
       <div class="photo-grid">
 
+
+        <!-- MARIAGE -->
 
         <article class="photo-card">
 
@@ -591,11 +694,13 @@
             alt="Réception de mariage élégante"
             loading="lazy">
 
+
           <div class="photo-card-content">
 
             <h3>
               Mariages
             </h3>
+
 
             <p>
               Une ambiance musicale et lumineuse adaptée
@@ -607,6 +712,9 @@
         </article>
 
 
+
+        <!-- SOIREE PRIVEE -->
+
         <article class="photo-card">
 
           <img
@@ -614,11 +722,13 @@
             alt="Soirée festive avec invités"
             loading="lazy">
 
+
           <div class="photo-card-content">
 
             <h3>
               Soirées privées
             </h3>
+
 
             <p>
               Anniversaires, fêtes et soirées entre proches.
@@ -629,6 +739,9 @@
         </article>
 
 
+
+        <!-- EVENEMENT -->
+
         <article class="photo-card">
 
           <img
@@ -636,11 +749,13 @@
             alt="Ambiance festive et piste de danse"
             loading="lazy">
 
+
           <div class="photo-card-content">
 
             <h3>
               Événements
             </h3>
+
 
             <p>
               Sonorisation, éclairage et animation musicale.
@@ -658,13 +773,17 @@
   </section>
 
 
-  <!-- BORNE À SELFIE -->
+
+  <!-- ===================================== -->
+  <!-- BORNE A SELFIE -->
+  <!-- ===================================== -->
 
   <section class="section section-alt">
 
     <div class="container">
 
       <div class="photo-text">
+
 
         <div class="photo-text-image">
 
@@ -676,25 +795,30 @@
         </div>
 
 
+
         <div class="photo-text-content">
 
           <p class="eyebrow">
             Option selfie booth
           </p>
 
+
           <h2>
             Ajoutez une touche fun à votre soirée
           </h2>
+
 
           <p>
             La borne à selfie permet à vos invités de réaliser
             des photos souvenirs tout au long de votre événement.
           </p>
 
+
           <p>
             Une animation conviviale qui permet à vos invités
             de repartir avec leurs souvenirs de la soirée.
           </p>
+
 
           <a href="#devis" class="cta">
             Demander un devis
@@ -709,15 +833,20 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- ZONES -->
+  <!-- ===================================== -->
 
   <section class="section" id="zones">
 
     <div class="container">
 
+
       <h2>
         DJ mariage et photographe en Isère et Auvergne-Rhône-Alpes
       </h2>
+
 
       <p>
         Fête La Fête Event intervient à Saint-Hilaire-de-la-Côte,
@@ -725,6 +854,7 @@
         Annecy, Valence, Saint-Étienne et plus largement en Isère
         et en Auvergne-Rhône-Alpes.
       </p>
+
 
       <p>
         Nous nous déplaçons directement sur le lieu de votre événement.
@@ -735,20 +865,26 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- DEVIS -->
+  <!-- ===================================== -->
 
   <section class="section section-alt" id="devis">
 
     <div class="container">
 
+
       <h2>
         Demandez votre devis
       </h2>
+
 
       <p>
         Présentez-nous votre projet, votre date et le type d'événement
         souhaité. Nous vous répondrons avec une proposition adaptée.
       </p>
+
 
 
       <form
@@ -762,6 +898,7 @@
             Nom
           </label>
 
+
           <input
             type="text"
             id="nom"
@@ -771,11 +908,13 @@
         </div>
 
 
+
         <div class="form-group">
 
           <label for="email">
             Email
           </label>
+
 
           <input
             type="email"
@@ -786,11 +925,13 @@
         </div>
 
 
+
         <div class="form-group">
 
           <label for="telephone">
             Téléphone
           </label>
+
 
           <input
             type="tel"
@@ -800,11 +941,13 @@
         </div>
 
 
+
         <div class="form-group">
 
           <label for="date">
             Date de l'événement
           </label>
+
 
           <input
             type="date"
@@ -814,11 +957,13 @@
         </div>
 
 
+
         <div class="form-group">
 
           <label for="prestation">
             Prestation souhaitée
           </label>
+
 
           <select
             id="prestation"
@@ -828,21 +973,26 @@
               Sélectionnez une prestation
             </option>
 
+
             <option value="DJ mariage">
               DJ mariage
             </option>
+
 
             <option value="Photographe mariage">
               Photographe mariage
             </option>
 
+
             <option value="DJ + Photographe mariage">
               DJ + Photographe mariage
             </option>
 
+
             <option value="Soirée privée">
               Soirée privée
             </option>
+
 
             <option value="Événement professionnel">
               Événement professionnel
@@ -853,11 +1003,13 @@
         </div>
 
 
+
         <div class="form-group">
 
           <label for="message">
             Votre projet
           </label>
+
 
           <textarea
             id="message"
@@ -868,10 +1020,13 @@
         </div>
 
 
+
         <button
           type="submit"
           class="cta">
+
           Demander un devis
+
         </button>
 
       </form>
@@ -881,21 +1036,27 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- CTA FINAL -->
+  <!-- ===================================== -->
 
   <section class="section">
 
     <div class="container">
 
+
       <h2>
         Préparons ensemble votre événement
       </h2>
+
 
       <p>
         DJ, photographie, sonorisation et éclairage :
         Fête La Fête Event vous accompagne pour créer
         une réception à votre image.
       </p>
+
 
       <a href="#devis" class="cta">
         Demander un devis
@@ -906,11 +1067,15 @@
   </section>
 
 
+
+  <!-- ===================================== -->
   <!-- FOOTER -->
+  <!-- ===================================== -->
 
   <footer class="site-footer">
 
     <div class="container">
+
 
       <p>
         <strong>
@@ -918,13 +1083,16 @@
         </strong>
       </p>
 
+
       <p>
         DJ mariage & photographe mariage en Isère
       </p>
 
+
       <p>
         Saint-Hilaire-de-la-Côte · Isère · Auvergne-Rhône-Alpes
       </p>
+
 
       <p>
         <a href="mailto:fetelafete.djsim@gmail.com">
@@ -932,11 +1100,13 @@
         </a>
       </p>
 
+
       <p>
         <a href="tel:+33611813395">
           06 11 81 33 95
         </a>
       </p>
+
 
       <p>
         <a href="https://fetelafete-event.fr/">
@@ -947,6 +1117,7 @@
     </div>
 
   </footer>
+
 
 </body>
 </html>
