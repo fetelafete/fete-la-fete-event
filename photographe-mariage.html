@@ -4,309 +4,428 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photographe mariage en Isère – Pack DJ + Photographe | Fête La Fête Event</title>
-  <meta name="description" content="Pour votre mariage en Isère, Fête La Fête Event vous propose une prestation photo intégrée à son pack DJ + Photographe. Une seule équipe pour l’ambiance musicale et les souvenirs de votre journée.">
+
+  <title>Photographe mariage en Isère avec DJ | Fête La Fête Event</title>
+  <meta name="description" content="Pour votre mariage en Isère, associez animation DJ et photographie avec le pack DJ + Photographe de Fête La Fête Event. Demandez votre devis.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://fetelafete-event.fr/photographe-mariage.html">
-  <link rel="icon" href="logo-fete-la-fete-event.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Photographe mariage en Isère avec DJ | Fête La Fête Event">
+  <meta property="og:description" content="Un seul pack pour l'ambiance musicale et les souvenirs photographiques de votre mariage en Isère et en Auvergne-Rhône-Alpes.">
+  <meta property="og:url" content="https://fetelafete-event.fr/photographe-mariage.html">
 
   <style>
-    :root {
-      --gold: #c9a45c;
-      --dark: #111;
-      --muted: #bdb7aa;
-      --panel: #1b1b1b;
+    * {
+      box-sizing: border-box;
     }
 
-    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
-      color: #f7f4ed;
-      background: #101010;
+      background: #050505;
+      color: #f5f2eb;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
     }
 
-    a { color: var(--gold); }
+    a {
+      color: #f5d27a;
+      text-decoration: none;
+    }
 
     header {
-      padding: 22px 6%;
-      border-bottom: 1px solid rgba(201,164,92,.35);
+      padding: 20px;
       text-align: center;
+      border-bottom: 1px solid #80652d;
+      background: #080808;
     }
 
     header img {
-      width: min(230px, 65vw);
+      width: 210px;
+      max-width: 80%;
       height: auto;
     }
 
     nav {
-      margin-top: 12px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 18px;
+      gap: 22px;
+      padding: 16px 12px;
+      background: #101010;
+      border-bottom: 1px solid #80652d;
     }
 
     nav a {
-      color: #f7f4ed;
-      text-decoration: none;
-      font-size: .95rem;
+      color: #f5f2eb;
+      font-size: 14px;
     }
 
-    nav a:hover { color: var(--gold); }
-
-    main {
-      width: min(1000px, 90%);
-      margin: 0 auto;
+    nav a:hover {
+      color: #f5d27a;
     }
 
     .hero {
-      padding: 76px 0 58px;
+      padding: 85px 20px;
       text-align: center;
+      background: linear-gradient(135deg, #080808, #211a0d, #080808);
     }
 
-    .eyebrow {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: .16em;
-      font-size: .82rem;
+    .hero h1 {
+      max-width: 950px;
+      margin: 0 auto 20px;
+      color: #f5d27a;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
     }
 
-    h1, h2 { line-height: 1.2; }
-
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.3rem);
-      margin: 14px 0;
-    }
-
-    h2 {
-      color: var(--gold);
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      margin-top: 0;
-    }
-
-    .lead {
-      max-width: 760px;
+    .hero p {
+      max-width: 780px;
       margin: 0 auto 28px;
-      color: #dedbd4;
-      font-size: 1.12rem;
+      font-size: 18px;
     }
 
     .button {
       display: inline-block;
-      padding: 13px 25px;
-      margin: 8px 6px;
-      background: var(--gold);
-      color: #151515;
-      text-decoration: none;
+      margin: 8px;
+      padding: 14px 25px;
+      border: 1px solid #f5d27a;
+      border-radius: 5px;
+      background: #c39a43;
+      color: #080808;
       font-weight: bold;
-      border-radius: 3px;
     }
 
     .button.secondary {
       background: transparent;
-      color: var(--gold);
-      border: 1px solid var(--gold);
+      color: #f5d27a;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
     }
 
     section {
-      padding: 42px 0;
-      border-top: 1px solid rgba(255,255,255,.1);
+      margin-bottom: 55px;
     }
 
-    .panel {
-      background: var(--panel);
-      border: 1px solid rgba(201,164,92,.25);
-      padding: 26px;
-      border-radius: 5px;
+    h2 {
+      margin-bottom: 20px;
+      color: #f5d27a;
+      font-size: 28px;
     }
 
-    .columns {
+    h3 {
+      color: #f5d27a;
+    }
+
+    .gold-line {
+      width: 75px;
+      height: 2px;
+      margin: 15px 0 25px;
+      background: #c39a43;
+    }
+
+    .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
     }
 
-    .columns h3 {
-      color: var(--gold);
-      margin-top: 0;
+    .card {
+      padding: 25px;
+      border: 1px solid #57451f;
+      border-radius: 8px;
+      background: #101010;
     }
 
-    ul { padding-left: 22px; }
-    li { margin: 8px 0; }
+    .highlight {
+      padding: 25px;
+      border-left: 3px solid #c39a43;
+      background: #111;
+    }
 
-    .center { text-align: center; }
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 700px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #80652d;
+      border-radius: 4px;
+      background: #111;
+      color: #fff;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 15px;
+      border: 0;
+      border-radius: 4px;
+      background: #c39a43;
+      color: #080808;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
     footer {
-      margin-top: 35px;
-      padding: 30px 6%;
+      padding: 35px 20px;
+      border-top: 1px solid #80652d;
+      background: #080808;
       text-align: center;
-      color: var(--muted);
-      border-top: 1px solid rgba(201,164,92,.35);
-      font-size: .92rem;
+      font-size: 14px;
     }
 
-    footer p { margin: 6px 0; }
+    footer p {
+      margin: 8px 0;
+    }
 
     @media (max-width: 600px) {
-      .hero { padding-top: 48px; }
-      nav { gap: 10px 14px; }
+      .hero {
+        padding: 60px 18px;
+      }
+
+      nav {
+        gap: 14px;
+      }
+
+      main {
+        padding: 35px 18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <a href="https://fetelafete-event.fr/" aria-label="Accueil Fête La Fête Event">
-      <img src="logo-fete-la-fete-event.png" alt="Fête La Fête Event">
-    </a>
+<header>
+  <a href="https://fetelafete-event.fr/">
+    <img src="logo-fete-la-fete-event.png" alt="Fête La Fête Event">
+  </a>
+</header>
 
-    <nav aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
-      <a href="dj-mariage-isere.html">DJ mariage</a>
-      <a href="dj-photographe-mariage.html">Pack DJ + Photographe</a>
-      <a href="index.html#contact">Demander un devis</a>
-    </nav>
-  </header>
+<nav>
+  <a href="https://fetelafete-event.fr/">Accueil</a>
+  <a href="dj-mariage-isere.html">DJ mariage</a>
+  <a href="dj-photographe-mariage.html">Pack DJ + Photographe</a>
+  <a href="#organisation">Notre accompagnement</a>
+  <a href="#devis">Demander un devis</a>
+</nav>
 
-  <main>
+<div class="hero">
+  <h1>Photographe de mariage en Isère : associez musique et souvenirs avec Fête La Fête Event</h1>
 
-    <div class="hero">
-      <p class="eyebrow">Mariage en Isère et en Auvergne-Rhône-Alpes</p>
+  <p>
+    Votre mariage mérite une ambiance à la hauteur de votre journée
+    et des souvenirs photographiques pour la revivre.
+    Découvrez notre pack DJ + Photographe, une prestation réunissant
+    animation musicale et photographie de mariage.
+  </p>
 
-      <h1>Photographe de mariage : vos souvenirs réunis avec votre animation DJ</h1>
+  <a class="button" href="#devis">Demander un devis</a>
+  <a class="button secondary" href="dj-photographe-mariage.html">Découvrir notre pack</a>
+</div>
 
-      <p class="lead">
-        Les moments forts de votre mariage méritent d’être conservés.
-        Avec Fête La Fête Event, la prestation photographique est proposée
-        dans une formule combinée avec l’animation DJ : une organisation
-        coordonnée pour profiter pleinement de votre journée et de votre soirée.
-      </p>
+<main>
 
-      <a class="button" href="dj-photographe-mariage.html">
-        Découvrir le pack DJ + Photographe
-      </a>
+  <section>
+    <h2>Un mariage, deux prestations complémentaires</h2>
+    <div class="gold-line"></div>
 
-      <a class="button secondary" href="mailto:fetelafete.djsim@gmail.com">
-        Nous contacter
-      </a>
-    </div>
-
-    <section>
-      <h2>Une prestation photo intégrée à votre formule mariage</h2>
-
-      <p>
-        Préparer un mariage demande du temps et de nombreux échanges
-        avec les prestataires. En réunissant l’animation musicale et
-        la photographie dans une même formule, vous disposez d’un
-        interlocuteur pour préparer ces deux aspects de votre événement.
-      </p>
-
-      <p>
-        La prestation photographique est assurée par Emmanuel et
-        s’inscrit dans le pack <strong>DJ + Photographe</strong>
-        de Fête La Fête Event. Elle n’est pas proposée séparément.
-      </p>
-    </section>
-
-    <section>
-      <h2>Une journée importante, des instants à conserver</h2>
-
-      <div class="columns">
-
-        <div class="panel">
-          <h3>Les moments de votre journée</h3>
-          <p>
-            Les instants importants de votre mariage peuvent être
-            préparés en amont avec vous, selon le déroulement prévu
-            et les besoins définis ensemble.
-          </p>
-        </div>
-
-        <div class="panel">
-          <h3>Une organisation coordonnée</h3>
-          <p>
-            La préparation de la partie photo et de l’animation DJ
-            se fait avec un interlocuteur commun pour faciliter
-            les échanges avant votre événement.
-          </p>
-        </div>
-
-        <div class="panel">
-          <h3>Une formule adaptée à votre projet</h3>
-          <p>
-            Échangeons sur votre date, votre lieu de réception
-            et le déroulement souhaité afin d’étudier la formule
-            qui correspond à votre mariage.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Votre animation DJ pour prolonger la fête</h2>
-
-      <p>
-        Le pack associe la prestation photographique à une animation
-        DJ préparée selon vos envies : ambiance musicale, sonorisation
-        et éclairage pour accompagner les temps forts de votre réception
-        et faire danser vos invités.
-      </p>
-
-      <p>
-        La préparation de votre événement permet de faire le point
-        sur vos goûts musicaux, les annonces et les moments particuliers
-        que vous souhaitez organiser.
-      </p>
-
-      <ul>
-        <li>Échanges et préparation en amont de votre mariage</li>
-        <li>Sonorisation adaptée à votre réception</li>
-        <li>Éclairage d’ambiance et effets lumineux</li>
-        <li>Micro sans fil pour les prises de parole et animations prévues</li>
-      </ul>
-    </section>
-
-    <section class="center">
-      <h2>Parlons de votre mariage</h2>
-
-      <p>
-        Vous recherchez une formule associant DJ et photographe en Isère
-        ou dans la région Auvergne-Rhône-Alpes ? Contactez Fête La Fête Event
-        pour présenter votre projet et demander un devis personnalisé.
-      </p>
-
-      <a class="button" href="dj-photographe-mariage.html">
-        Voir le pack DJ + Photographe
-      </a>
-
-      <a class="button secondary" href="tel:+33611813395">
-        06 11 81 33 95
-      </a>
-
-      <p>
-        <a href="mailto:fetelafete.djsim@gmail.com">
-          fetelafete.djsim@gmail.com
-        </a>
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p><strong>Fête La Fête Event</strong> – DJ mariage et pack DJ + Photographe</p>
-    <p>Saint-Hilaire-de-la-Côte – Isère – Auvergne-Rhône-Alpes</p>
-    <p>Tél. 06 11 81 33 95 · SIRET 799 582 291 00057</p>
     <p>
-      <a href="https://fetelafete-event.fr/">
-        www.fetelafete-event.fr
-      </a>
+      La préparation d'un mariage demande du temps et une bonne organisation.
+      Entre la cérémonie, le vin d'honneur, le repas et la soirée dansante,
+      chaque moment compte.
     </p>
-  </footer>
+
+    <p>
+      Avec Fête La Fête Event, vous pouvez réunir l'animation DJ et la
+      prestation photographique au sein d'un même pack.
+      Vous bénéficiez ainsi d'une organisation coordonnée pour profiter
+      pleinement de votre journée et de votre soirée.
+    </p>
+
+    <div class="highlight">
+      <strong>Notre engagement :</strong>
+      vous proposer une prestation globale DJ + Photographe.
+      Fête La Fête Event ne propose pas de prestation de photographe seul.
+    </div>
+  </section>
+
+  <section id="organisation">
+    <h2>Une prestation pensée pour votre journée de mariage</h2>
+    <div class="gold-line"></div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Animation DJ</h3>
+        <p>
+          Une animation musicale adaptée à votre mariage, à vos envies
+          et à l'ambiance que vous souhaitez créer.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Photographie</h3>
+        <p>
+          Une prestation photographique assurée par Emmanuel,
+          intégrée à notre pack DJ + Photographe.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Préparation en amont</h3>
+        <p>
+          Nous échangeons avec vous avant l'événement afin de préparer
+          votre prestation et de prendre en compte vos attentes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Une animation musicale adaptée à votre mariage</h2>
+    <div class="gold-line"></div>
+
+    <p>
+      La musique accompagne les moments importants de votre mariage :
+      arrivée des invités, vin d'honneur, repas, ouverture de bal et soirée dansante.
+    </p>
+
+    <p>
+      Votre prestation DJ comprend une installation de sonorisation,
+      un éclairage adapté à la soirée, une cabine DJ et un micro sans fil.
+      La préparation musicale est réalisée en fonction de vos goûts
+      et de l'ambiance souhaitée.
+    </p>
+
+    <p>
+      La sonorisation et les éclairages sont adaptés à votre lieu
+      de réception et à votre événement.
+    </p>
+  </section>
+
+  <section>
+    <h2>Photographie de mariage : conserver les souvenirs de votre journée</h2>
+    <div class="gold-line"></div>
+
+    <p>
+      Les mariages sont composés de nombreux instants précieux :
+      les retrouvailles, les émotions, les sourires, les moments partagés
+      avec vos proches et les temps forts de votre réception.
+    </p>
+
+    <p>
+      La photographie complète notre prestation DJ afin de vous proposer
+      une solution réunissant l'ambiance de votre événement et les souvenirs
+      photographiques de cette journée.
+    </p>
+
+    <p>
+      Le contenu et les modalités de la prestation photographique sont
+      définis avec vous lors de la préparation de votre devis.
+    </p>
+  </section>
+
+  <section>
+    <h2>DJ et photographe de mariage en Isère et Auvergne-Rhône-Alpes</h2>
+    <div class="gold-line"></div>
+
+    <p>
+      Basée à Saint-Hilaire-de-la-Côte, Fête La Fête Event intervient
+      pour les mariages en Isère et dans les départements voisins,
+      selon le lieu et les conditions de votre événement.
+    </p>
+
+    <p>
+      Nous pouvons notamment étudier vos demandes à Bourgoin-Jallieu,
+      Grenoble, Voiron, Vienne, Lyon, Chambéry, Annecy et Valence.
+    </p>
+  </section>
+
+  <section>
+    <h2>Découvrez notre pack DJ + Photographe</h2>
+    <div class="gold-line"></div>
+
+    <p>
+      Vous souhaitez confier l'animation musicale et la photographie
+      de votre mariage à une prestation coordonnée ?
+      Retrouvez les informations sur notre offre principale.
+    </p>
+
+    <a class="button" href="dj-photographe-mariage.html">
+      Voir le pack DJ + Photographe
+    </a>
+  </section>
+
+  <section id="devis">
+    <h2>Demandez votre devis mariage</h2>
+    <div class="gold-line"></div>
+
+    <p>
+      Parlez-nous de votre projet : date du mariage, lieu de réception,
+      nombre d'invités et ambiance souhaitée.
+      Nous étudierons votre demande pour vous proposer une prestation adaptée.
+    </p>
+
+    <form action="https://formspree.io/f/xoeagnag" method="POST">
+
+      <input type="hidden" name="_subject" value="Demande de devis - Pack DJ + Photographe mariage">
+
+      <input type="hidden" name="Prestation" value="Pack DJ + Photographe mariage">
+
+      <input type="text" name="Nom" placeholder="Votre nom et prénom" required>
+
+      <input type="email" name="Email" placeholder="Votre adresse e-mail" required>
+
+      <input type="tel" name="Telephone" placeholder="Votre téléphone" required>
+
+      <input type="date" name="Date du mariage">
+
+      <input type="text" name="Lieu" placeholder="Ville et lieu de réception">
+
+      <input type="number" name="Nombre d'invites" placeholder="Nombre approximatif d'invités" min="1">
+
+      <textarea name="Message" placeholder="Présentez-nous votre projet de mariage"></textarea>
+
+      <button type="submit">Envoyer ma demande de devis</button>
+
+    </form>
+
+    <p>
+      Vous pouvez également nous contacter directement au
+      <a href="tel:0611813395">06 11 81 33 95</a>
+      ou par e-mail à
+      <a href="mailto:fetelafete.djsim@gmail.com">fetelafete.djsim@gmail.com</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>Fête La Fête Event</strong></p>
+  <p>DJ mariage & Photographe mariage en Isère et Auvergne-Rhône-Alpes</p>
+  <p>Téléphone : <a href="tel:0611813395">06 11 81 33 95</a></p>
+  <p>E-mail : <a href="mailto:fetelafete.djsim@gmail.com">fetelafete.djsim@gmail.com</a></p>
+  <p>Site : <a href="https://fetelafete-event.fr/">www.fetelafete-event.fr</a></p>
+  <p>SIRET : 799 582 291 00057</p>
+  <p>© Fête La Fête Event - Tous droits réservés</p>
+</footer>
 
 </body>
 </html>
