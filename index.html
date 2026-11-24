@@ -113,48 +113,61 @@
       margin-top: 0;
     }
 
-    /* Logos Facebook et Bark */
+    /* Logos des réseaux sociaux */
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    nav .social-links {
+      display: inline-flex;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+
     .social-logo-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      vertical-align: middle;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #151515;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      transition: transform 0.25s ease, background 0.25s ease;
       text-decoration: none;
-      transition: transform 0.25s ease, opacity 0.25s ease;
     }
 
     .social-logo-link:hover {
       transform: translateY(-3px);
-      opacity: 0.85;
+      background: #292929;
     }
 
     .social-logo-link svg {
+      width: 23px;
+      height: 23px;
       display: block;
-      width: 34px;
-      height: 34px;
     }
 
-    .site-header nav .social-logo-link {
-      margin: 0 5px;
+    .social-logo-link.facebook {
+      background: #1877F2;
+      border-color: #1877F2;
+    }
+
+    .social-logo-link.tiktok {
+      background: #080808;
+      border-color: #555;
+    }
+
+    .social-logo-link.bark {
+      color: #f1d675;
     }
 
     .site-footer .social-links {
-      display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 22px;
       margin-top: 18px;
-    }
-
-    .site-footer .social-logo-link svg {
-      width: 42px;
-      height: 42px;
-    }
-
-    .social-logo-link:focus-visible {
-      outline: 2px solid #d4af37;
-      outline-offset: 5px;
-      border-radius: 5px;
     }
 
     @media (max-width: 850px) {
@@ -189,11 +202,6 @@
 
       .photo-text-image img {
         height: 280px;
-      }
-
-      .site-header nav .social-logo-link svg {
-        width: 29px;
-        height: 29px;
       }
     }
   </style>
@@ -328,41 +336,42 @@
       <a href="dj-photographe-mariage.html">DJ + Photographe</a>
       <a href="#zones">Zones</a>
 
-      <a
-        href="https://www.bark.com/fr/fr/b/fte-la-fte-event/9XogkJ/"
-        class="social-logo-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Voir notre profil Bark"
-        title="Bark">
+      <span class="social-links">
+        <a class="social-logo-link bark"
+           href="https://www.bark.com/fr/fr/b/fte-la-fte-event/9XogkJ/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Profil Fête La Fête Event sur Bark"
+           title="Bark">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4L24.5 14.5L36 15.5L27.5 23L30 35L20 29L10 35L12.5 23L4 15.5L15.5 14.5L20 4Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          </svg>
+        </a>
 
-        <svg viewBox="0 0 100 42" role="img" aria-hidden="true">
-          <g fill="#f1d675">
-            <ellipse cx="13" cy="11" rx="5" ry="7" transform="rotate(-25 13 11)"/>
-            <ellipse cx="25" cy="7" rx="5" ry="7" transform="rotate(-8 25 7)"/>
-            <ellipse cx="37" cy="11" rx="5" ry="7" transform="rotate(25 37 11)"/>
-            <ellipse cx="9" cy="25" rx="5" ry="7" transform="rotate(-35 9 25)"/>
-            <path d="M12 30 C12 19 37 17 40 29 C43 40 11 41 12 30Z"/>
-          </g>
-          <text x="48" y="31" fill="#f1d675" font-size="27" font-weight="bold" font-family="Arial, sans-serif">Bark</text>
-        </svg>
-      </a>
+        <a class="social-logo-link facebook"
+           href="https://www.facebook.com/profile.php?id=61582206187327"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Page Facebook Fête La Fête Event"
+           title="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#fff" d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H7v3.2h2.8V21h3.7Z"/>
+          </svg>
+        </a>
 
-      <a
-        href="https://www.facebook.com/profile.php?id=61582206187327"
-        class="social-logo-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Retrouvez-nous sur Facebook"
-        title="Facebook">
-
-        <svg viewBox="0 0 40 40" role="img" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" fill="#1877F2"/>
-          <path
-            fill="#ffffff"
-            d="M22.5 33V21.2h4l.6-4.6h-4.6v-2.9c0-1.3.4-2.2 2.3-2.2h2.5V7.4c-.4-.1-1.9-.2-3.6-.2-3.6 0-6.1 2.2-6.1 6.3v3.1h-4.1v4.6h4.1V33h4.9z"/>
-        </svg>
-      </a>
+        <a class="social-logo-link tiktok"
+           href="https://www.tiktok.com/@fetelafetrevent"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Profil TikTok Fête La Fête Event"
+           title="TikTok">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#25F4EE" d="M19.6 7.2a6.2 6.2 0 0 1-4.1-1.5v8.1a6.1 6.1 0 1 1-5.3-6.1v3.2a2.9 2.9 0 1 0 2.1 2.8V2h3.2c.2 2.1 1.7 3.8 4.1 4.1v1.1Z"/>
+            <path fill="#FE2C55" d="M18.3 6.2a5.9 5.9 0 0 1-2.8-1.7v8.1a6.1 6.1 0 0 1-6.1 6.1 6 6 0 0 1-3.1-.9 6.1 6.1 0 0 0 10.1-4.6V5.1a6.2 6.2 0 0 0 4.1 2.1V6.1c-.8 0-1.5 0-2.2.1Z"/>
+            <path fill="#fff" d="M15.5 2h-3.2v11.7a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V7.7a6.1 6.1 0 1 0 5.3 6.1V5.7a6.2 6.2 0 0 0 4.1 1.5V4.1c-2.4-.3-3.9-2-4.1-2.1Z"/>
+          </svg>
+        </a>
+      </span>
 
       <a href="#devis" class="cta">Demander un devis</a>
     </nav>
@@ -802,43 +811,40 @@
     </p>
 
     <div class="social-links">
-
-      <a
-        href="https://www.bark.com/fr/fr/b/fte-la-fte-event/9XogkJ/"
-        class="social-logo-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Consulter notre profil Bark"
-        title="Bark">
-
-        <svg viewBox="0 0 100 42" role="img" aria-hidden="true">
-          <g fill="#f1d675">
-            <ellipse cx="13" cy="11" rx="5" ry="7" transform="rotate(-25 13 11)"/>
-            <ellipse cx="25" cy="7" rx="5" ry="7" transform="rotate(-8 25 7)"/>
-            <ellipse cx="37" cy="11" rx="5" ry="7" transform="rotate(25 37 11)"/>
-            <ellipse cx="9" cy="25" rx="5" ry="7" transform="rotate(-35 9 25)"/>
-            <path d="M12 30 C12 19 37 17 40 29 C43 40 11 41 12 30Z"/>
-          </g>
-          <text x="48" y="31" fill="#f1d675" font-size="27" font-weight="bold" font-family="Arial, sans-serif">Bark</text>
+      <a class="social-logo-link bark"
+         href="https://www.bark.com/fr/fr/b/fte-la-fte-event/9XogkJ/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Profil Fête La Fête Event sur Bark"
+         title="Bark">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4L24.5 14.5L36 15.5L27.5 23L30 35L20 29L10 35L12.5 23L4 15.5L15.5 14.5L20 4Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
         </svg>
       </a>
 
-      <a
-        href="https://www.facebook.com/profile.php?id=61582206187327"
-        class="social-logo-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Retrouvez-nous sur Facebook"
-        title="Facebook">
-
-        <svg viewBox="0 0 40 40" role="img" aria-hidden="true">
-          <circle cx="20" cy="20" r="19" fill="#1877F2"/>
-          <path
-            fill="#ffffff"
-            d="M22.5 33V21.2h4l.6-4.6h-4.6v-2.9c0-1.3.4-2.2 2.3-2.2h2.5V7.4c-.4-.1-1.9-.2-3.6-.2-3.6 0-6.1 2.2-6.1 6.3v3.1h-4.1v4.6h4.1V33h4.9z"/>
+      <a class="social-logo-link facebook"
+         href="https://www.facebook.com/profile.php?id=61582206187327"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Page Facebook Fête La Fête Event"
+         title="Facebook">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fff" d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H7v3.2h2.8V21h3.7Z"/>
         </svg>
       </a>
 
+      <a class="social-logo-link tiktok"
+         href="https://www.tiktok.com/@fetelafetrevent"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Profil TikTok Fête La Fête Event"
+         title="TikTok">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#25F4EE" d="M19.6 7.2a6.2 6.2 0 0 1-4.1-1.5v8.1a6.1 6.1 0 1 1-5.3-6.1v3.2a2.9 2.9 0 1 0 2.1 2.8V2h3.2c.2 2.1 1.7 3.8 4.1 4.1v1.1Z"/>
+          <path fill="#FE2C55" d="M18.3 6.2a5.9 5.9 0 0 1-2.8-1.7v8.1a6.1 6.1 0 0 1-6.1 6.1 6 6 0 0 1-3.1-.9 6.1 6.1 0 0 0 10.1-4.6V5.1a6.2 6.2 0 0 0 4.1 2.1V6.1c-.8 0-1.5 0-2.2.1Z"/>
+          <path fill="#fff" d="M15.5 2h-3.2v11.7a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V7.7a6.1 6.1 0 1 0 5.3 6.1V5.7a6.2 6.2 0 0 0 4.1 1.5V4.1c-2.4-.3-3.9-2-4.1-2.1Z"/>
+        </svg>
+      </a>
     </div>
 
   </div>
