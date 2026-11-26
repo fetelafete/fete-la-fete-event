@@ -41,54 +41,18 @@
     "taxID": "799 582 291 00057",
     "description": "DJ anniversaire en Isère avec animation musicale, sonorisation et éclairage pour les soirées d'anniversaire et événements privés.",
     "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Isère"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Auvergne-Rhône-Alpes"
-      },
-      {
-        "@type": "City",
-        "name": "Saint-Hilaire-de-la-Côte"
-      },
-      {
-        "@type": "City",
-        "name": "Bourgoin-Jallieu"
-      },
-      {
-        "@type": "City",
-        "name": "Grenoble"
-      },
-      {
-        "@type": "City",
-        "name": "Voiron"
-      },
-      {
-        "@type": "City",
-        "name": "Vienne"
-      },
-      {
-        "@type": "City",
-        "name": "Lyon"
-      },
-      {
-        "@type": "City",
-        "name": "Chambéry"
-      },
-      {
-        "@type": "City",
-        "name": "Annecy"
-      },
-      {
-        "@type": "City",
-        "name": "Valence"
-      },
-      {
-        "@type": "City",
-        "name": "Saint-Étienne"
-      }
+      {"@type": "AdministrativeArea", "name": "Isère"},
+      {"@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes"},
+      {"@type": "City", "name": "Saint-Hilaire-de-la-Côte"},
+      {"@type": "City", "name": "Bourgoin-Jallieu"},
+      {"@type": "City", "name": "Grenoble"},
+      {"@type": "City", "name": "Voiron"},
+      {"@type": "City", "name": "Vienne"},
+      {"@type": "City", "name": "Lyon"},
+      {"@type": "City", "name": "Chambéry"},
+      {"@type": "City", "name": "Annecy"},
+      {"@type": "City", "name": "Valence"},
+      {"@type": "City", "name": "Saint-Étienne"}
     ],
     "serviceType": [
       "DJ anniversaire",
@@ -211,9 +175,7 @@
       margin-bottom: 12px;
     }
 
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
       line-height: 1.2;
     }
 
@@ -264,12 +226,11 @@
     .hero {
       padding: 75px 0 65px;
       text-align: center;
-      background:
-        radial-gradient(
-          circle at center,
-          rgba(217,164,65,.09),
-          transparent 55%
-        );
+      background: radial-gradient(
+        circle at center,
+        rgba(217,164,65,.09),
+        transparent 55%
+      );
     }
 
     .hero-logo {
@@ -351,6 +312,19 @@
       object-fit: cover;
       border-radius: 8px;
       border: 1px solid var(--line);
+    }
+
+    .real-photo {
+      margin: 35px auto;
+      max-width: 900px;
+    }
+
+    .real-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      box-shadow: 0 15px 40px rgba(0,0,0,.35);
     }
 
     .steps {
@@ -581,18 +555,15 @@
 </head>
 
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a
-        href="/"
-        class="logo-link"
-        aria-label="Fête La Fête Event - Accueil"
-      >
+
+      <a href="/" class="logo-link" aria-label="Fête La Fête Event - Accueil">
         <img
           src="logo-fete-la-fete-event.png"
           alt="Fête La Fête Event"
-          class="logo"
-        >
+          class="logo">
       </a>
 
       <nav>
@@ -602,28 +573,28 @@
         <a href="#zones">Zones</a>
         <a href="#devis" class="cta">Demander un devis</a>
       </nav>
+
     </div>
   </header>
 
   <main>
+
     <section class="hero">
       <div class="container">
+
         <img
           class="hero-logo"
           src="logo-fete-la-fete-event.png"
           alt="Fête La Fête Event - DJ anniversaire en Isère"
           width="190"
           height="190"
-          loading="eager"
-        >
+          loading="eager">
 
         <div class="eyebrow">
           DJ anniversaire · Isère & Auvergne-Rhône-Alpes
         </div>
 
-        <h1>
-          DJ anniversaire en Isère
-        </h1>
+        <h1>DJ anniversaire en Isère</h1>
 
         <p class="hero-text">
           Fête La Fête Event vous accompagne pour faire de votre
@@ -638,16 +609,17 @@
 
         <div class="hero-photo">
           <img
-            src="https://images.pexels.com/photos/29416469/pexels-photo-29416469.jpeg?auto=compress&cs=tinysrgb&w=1800"
-            alt="DJ professionnel et ambiance lumineuse pendant une soirée"
-            loading="eager"
-          >
+            src="photos/animation-dj-anniversaire.webp"
+            alt="Animation DJ anniversaire et ambiance festive Fête La Fête Event"
+            loading="eager">
         </div>
+
       </div>
     </section>
 
     <section class="section section-alt" id="prestation">
       <div class="container content">
+
         <div class="eyebrow">
           DJ anniversaire en Isère
         </div>
@@ -682,18 +654,18 @@
           en Isère et se déplace également dans toute
           l'Auvergne-Rhône-Alpes.
         </p>
+
       </div>
     </section>
 
     <section class="section" id="anniversaire">
       <div class="container">
+
         <div class="eyebrow">
           Une prestation personnalisée
         </div>
 
-        <h2>
-          Votre anniversaire, votre ambiance
-        </h2>
+        <h2>Votre anniversaire, votre ambiance</h2>
 
         <p class="lead" style="margin-left:0;">
           Chaque anniversaire possède sa propre ambiance.
@@ -702,6 +674,7 @@
         </p>
 
         <div class="cards">
+
           <article class="card">
             <h3>Vos goûts musicaux</h3>
             <p>
@@ -737,19 +710,19 @@
               programmation adaptée à vos invités.
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <section class="section section-alt">
       <div class="container">
+
         <div class="eyebrow">
           L'ambiance de votre soirée
         </div>
 
-        <h2>
-          Une ambiance musicale et lumineuse
-        </h2>
+        <h2>Une ambiance musicale et lumineuse</h2>
 
         <p class="lead" style="margin-left:0;">
           La musique et l'éclairage participent ensemble à
@@ -757,29 +730,29 @@
         </p>
 
         <div class="gallery">
-          <img
-            src="https://images.pexels.com/photos/7180887/pexels-photo-7180887.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Invités réunis pour une fête d'anniversaire"
-            loading="lazy"
-          >
 
           <img
-            src="https://images.pexels.com/photos/29486087/pexels-photo-29486087.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Piste de danse éclairée pendant une soirée festive"
-            loading="lazy"
-          >
+            src="photos/ambiance-soiree-privee.webp"
+            alt="Ambiance de soirée privée animée par Fête La Fête Event"
+            loading="lazy">
 
           <img
-            src="https://images.pexels.com/photos/27689421/pexels-photo-27689421.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Invités dansant pendant une fête"
-            loading="lazy"
-          >
+            src="photos/effets-laser-piste-de-danse.webp"
+            alt="Effets laser et éclairage de la piste de danse"
+            loading="lazy">
+
+          <img
+            src="photos/ambiance-dj-piste-de-danse.webp"
+            alt="Ambiance DJ et piste de danse pendant une soirée festive"
+            loading="lazy">
+
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
+
         <div class="eyebrow">
           Une soirée qui évolue
         </div>
@@ -789,6 +762,7 @@
         </h2>
 
         <div class="cards">
+
           <article class="card">
             <h3>Accueil des invités</h3>
             <p>
@@ -823,19 +797,17 @@
               créée par vos invités.
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <section class="section section-alt">
       <div class="container">
-        <div class="eyebrow">
-          Préparation
-        </div>
 
-        <h2>
-          Votre anniversaire se prépare avant la soirée
-        </h2>
+        <div class="eyebrow">Préparation</div>
+
+        <h2>Votre anniversaire se prépare avant la soirée</h2>
 
         <p class="lead" style="margin-left:0;">
           Nous échangeons avec vous afin de connaître vos envies
@@ -843,6 +815,7 @@
         </p>
 
         <div class="steps">
+
           <article class="step">
             <div class="step-number">01</div>
             <h3>Votre projet</h3>
@@ -878,19 +851,17 @@
               et animation musicale.
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container content">
-        <div class="eyebrow">
-          Sonorisation
-        </div>
 
-        <h2>
-          Une sonorisation adaptée à votre salle
-        </h2>
+        <div class="eyebrow">Sonorisation</div>
+
+        <h2>Une sonorisation adaptée à votre salle</h2>
 
         <p>
           La qualité du son est essentielle pour profiter
@@ -910,18 +881,16 @@
           extérieur ou dans une salle particulière, l'installation
           peut être adaptée aux contraintes du lieu.
         </p>
+
       </div>
     </section>
 
     <section class="section section-alt">
       <div class="container content">
-        <div class="eyebrow">
-          Lumière & ambiance
-        </div>
 
-        <h2>
-          Des éclairages pour transformer la soirée
-        </h2>
+        <div class="eyebrow">Lumière & ambiance</div>
+
+        <h2>Des éclairages pour transformer la soirée</h2>
 
         <p>
           L'éclairage permet de faire évoluer l'ambiance de votre
@@ -939,25 +908,33 @@
           créer une atmosphère dynamique tout en conservant une
           installation adaptée à votre lieu de réception.
         </p>
+
       </div>
     </section>
 
     <section class="section">
       <div class="container">
+
         <div class="eyebrow">
           Installation professionnelle
         </div>
 
-        <h2>
-          Une installation adaptée à votre anniversaire
-        </h2>
+        <h2>Une installation adaptée à votre anniversaire</h2>
 
         <p class="lead" style="margin-left:0;">
           Le matériel est choisi et installé selon la configuration
           de votre soirée.
         </p>
 
+        <div class="real-photo">
+          <img
+            src="photos/materiel-dj-eclairage-violet.webp"
+            alt="Matériel DJ professionnel et éclairage violet de Fête La Fête Event"
+            loading="lazy">
+        </div>
+
         <div class="equipment">
+
           <div class="equipment-box">
             <h3>Sonorisation</h3>
             <ul>
@@ -979,12 +956,14 @@
               <li>Installation adaptée au lieu</li>
             </ul>
           </div>
+
         </div>
       </div>
     </section>
 
     <section class="section section-alt">
       <div class="container content">
+
         <div class="eyebrow">
           Une option pour vos invités
         </div>
@@ -1004,14 +983,21 @@
           la soirée et repartir avec des souvenirs de votre
           événement.
         </p>
+
+        <div class="real-photo">
+          <img
+            src="photos/borne-selfie-evenement.webp"
+            alt="Borne à selfie Fête La Fête Event pour anniversaire et soirée privée"
+            loading="lazy">
+        </div>
+
       </div>
     </section>
 
     <section class="section">
       <div class="container content">
-        <div class="eyebrow">
-          Fête La Fête Event
-        </div>
+
+        <div class="eyebrow">Fête La Fête Event</div>
 
         <h2>
           Pourquoi choisir Fête La Fête Event pour votre anniversaire ?
@@ -1043,14 +1029,14 @@
             pack DJ + Photographe mariage en Isère
           </a>.
         </p>
+
       </div>
     </section>
 
     <section class="section section-alt" id="zones">
       <div class="container">
-        <div class="eyebrow">
-          Zone d'intervention
-        </div>
+
+        <div class="eyebrow">Zone d'intervention</div>
 
         <h2>
           DJ anniversaire en Isère et en Auvergne-Rhône-Alpes
@@ -1081,20 +1067,19 @@
           <div class="zone">Saint-Étienne</div>
           <div class="zone">Auvergne-Rhône-Alpes</div>
         </div>
+
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="eyebrow">
-          Questions fréquentes
-        </div>
 
-        <h2>
-          Questions sur la prestation DJ anniversaire
-        </h2>
+        <div class="eyebrow">Questions fréquentes</div>
+
+        <h2>Questions sur la prestation DJ anniversaire</h2>
 
         <div class="faq">
+
           <article class="faq-item">
             <h3>Quel type d'anniversaire pouvez-vous animer ?</h3>
             <p>
@@ -1161,19 +1146,17 @@
               Annecy, Valence et Saint-Étienne.
             </p>
           </article>
+
         </div>
       </div>
     </section>
 
     <section class="section section-alt" id="devis">
       <div class="container">
-        <div class="eyebrow">
-          Votre projet
-        </div>
 
-        <h2>
-          Parlons de votre anniversaire
-        </h2>
+        <div class="eyebrow">Votre projet</div>
+
+        <h2>Parlons de votre anniversaire</h2>
 
         <p class="lead" style="margin-left:0;">
           Vous recherchez un DJ pour votre anniversaire en Isère ?
@@ -1182,7 +1165,9 @@
         </p>
 
         <div class="contact-grid">
+
           <div class="contact-box">
+
             <h3>Fête La Fête Event</h3>
 
             <p>
@@ -1215,40 +1200,37 @@
               Déplacement sur le lieu de votre anniversaire
               en Isère et en Auvergne-Rhône-Alpes.
             </p>
+
           </div>
 
           <div class="form-box">
-            <form
-              action="https://formspree.io/f/xoeagnag"
-              method="POST"
-            >
+
+            <form action="https://formspree.io/f/xoeagnag" method="POST">
+
               <input
                 type="text"
                 name="nom"
                 placeholder="Nom / prénom"
-                required
-              >
+                required>
 
               <input
                 type="email"
                 name="email"
                 placeholder="Votre e-mail"
-                required
-              >
+                required>
 
               <input
                 type="tel"
                 name="telephone"
-                placeholder="Téléphone"
-              >
+                placeholder="Téléphone">
 
               <input
                 type="text"
                 name="date"
-                placeholder="Date de l'événement"
-              >
+                placeholder="Date de l'événement">
 
               <select name="prestation">
+
                 <option value="">
                   Prestation souhaitée
                 </option>
@@ -1268,6 +1250,7 @@
                 <option value="Autre demande">
                   Autre demande
                 </option>
+
               </select>
 
               <textarea
@@ -1278,7 +1261,9 @@
               <button type="submit">
                 Demander un devis
               </button>
+
             </form>
+
           </div>
         </div>
       </div>
@@ -1286,9 +1271,8 @@
 
     <section class="section">
       <div class="container content">
-        <div class="eyebrow">
-          Fête La Fête Event
-        </div>
+
+        <div class="eyebrow">Fête La Fête Event</div>
 
         <h2>
           Faites de votre anniversaire une vraie soirée de fête
@@ -1308,12 +1292,15 @@
         <a href="#devis" class="cta">
           Demander un devis
         </a>
+
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
+
       <p>
         <strong>Fête La Fête Event</strong>
       </p>
@@ -1323,8 +1310,7 @@
       </p>
 
       <p>
-        Saint-Hilaire-de-la-Côte · Isère ·
-        Auvergne-Rhône-Alpes
+        Saint-Hilaire-de-la-Côte · Isère · Auvergne-Rhône-Alpes
       </p>
 
       <p>
@@ -1344,7 +1330,9 @@
       <p>
         © 2026 Fête La Fête Event — Tous droits réservés.
       </p>
+
     </div>
   </footer>
+
 </body>
 </html>
